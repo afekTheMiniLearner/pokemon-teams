@@ -49,6 +49,7 @@ module.exports = {
       title: "Dye-Symbols",
       filename: "index.html",
       template: "src/template.html",
+      favicon: "public/favicon.ico",
     }),
   ],
 };
