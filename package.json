@@ -1,22 +1,32 @@
 {
-  "name": "dye-symbols",
+  "name": "pokemon-teams",
+  "description": "The app shows favorite pokemon teams and their data, each team relate to specific game",
+  "author": "afek-sakaju",
+  "homepage": "https://github.com/afekTheMiniLearner/pokemon-teams",
+  "keywords": [
+    "pokemon",
+    "data",
+    "favorite pokemons",
+    "pokemon game"
+  ],
   "version": "1.0.0",
-  "description": "",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afekTheMiniLearner/pokemon-teams.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afekTheMiniLearner/pokemon-teams/issues"
+  },
   "scripts": {
     "start-dev": "npm run build && webpack serve",
     "build": "webpack --config webpack.config.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/afekTheMiniLearner/dye-symbols.git"
+  "dependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/afekTheMiniLearner/dye-symbols/issues"
-  },
-  "homepage": "https://github.com/afekTheMiniLearner/dye-symbols#readme",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
@@ -30,10 +40,5 @@
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.11.1"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
   }
 }

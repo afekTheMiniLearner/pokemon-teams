@@ -46,7 +46,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Dye-Symbols",
+      title: "pokemon-teams",
       filename: "index.html",
       template: "src/template.html",
       favicon: "public/favicon.ico",
