@@ -1,8 +1,6 @@
 import React from "react";
-// eslint-disable-next-line import/no-extraneous-dependencies
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { ToggleButtonGroup as MuiToggleButtonGroup } from "@mui/material";
 
 export default function ToggleButton({
@@ -29,12 +27,12 @@ export default function ToggleButton({
 }
 
 ToggleButton.propTypes = {
-  size: Proptypes.string,
-  value: Proptypes.string,
-  color: Proptypes.string,
-  orientation: Proptypes.string,
-  selected: Proptypes.bool,
-  onChange: Proptypes.string,
+  size: PropTypes.string,
+  value: PropTypes.string,
+  color: PropTypes.string,
+  orientation: PropTypes.string,
+  selected: PropTypes.bool,
+  onChange: PropTypes.string,
 };
 
 ToggleButton.defaultProps = {
