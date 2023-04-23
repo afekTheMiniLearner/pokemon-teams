@@ -5,13 +5,12 @@ import {
   ToggleButtonGroup as MuiToggleButtonGroup,
   ToggleButton as MuiToggleButton,
 } from "@mui/material";
+import { TOGGLE_DATA_OPTIONS } from "@utils";
 
-export default function ToggleButtons({
+export default function ToggleDataButtons({
   size,
-  values,
   color,
   orientation,
-  exclusive,
   onChange,
   children,
   ...props
@@ -21,11 +20,11 @@ export default function ToggleButtons({
       size={size}
       color={color}
       orientation={orientation}
-      exclusive={exclusive}
+      exclusive
       onChange={onChange}
       {...props}
     >
-      {values.map((value) => {
+      {TOGGLE_DATA_OPTIONS.map((value) => {
         return <MuiToggleButton value={value} />;
       })}
       {children}
@@ -33,20 +32,16 @@ export default function ToggleButtons({
   );
 }
 
-ToggleButtons.propTypes = {
+ToggleDataButtons.propTypes = {
   size: PropTypes.string,
-  values: PropTypes.string,
   color: PropTypes.string,
   orientation: PropTypes.string,
-  exclusive: PropTypes.bool,
   onChange: PropTypes.string,
 };
 
-ToggleButtons.defaultProps = {
+ToggleDataButtons.defaultProps = {
   size: undefined,
-  values: undefined,
-  color: undefined,
-  orientation: undefined,
-  exclusive: false,
+  color: "default",
+  orientation: "horizontal",
   onChange: undefined,
 };

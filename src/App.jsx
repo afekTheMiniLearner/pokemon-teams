@@ -1,12 +1,11 @@
 import React from "react";
 
-import { ToggleButtons } from "@base-components";
+import { ToggleDataButtons } from "@components";
 
 function App() {
   return (
     <div className="app-container">
-      Hola papito
-      <ToggleButtons values={["WEB", "ANDROID", "IOS"]} />
+      <ToggleDataButtons />
     </div>
   );
 }
