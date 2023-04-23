@@ -20,7 +20,7 @@
     "url": "https://github.com/afekTheMiniLearner/pokemon-teams/issues"
   },
   "scripts": {
-    "start-dev": "webpack serve",
+    "start": "webpack serve",
     "build": "webpack --config webpack.config.js",
     "lint": "eslint --ext .jsx --ext .js .",
     "predeploy": "npm run build",
@@ -31,6 +31,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.12.1",
     "@mui/styled-engine": "^5.12.0",
     "@mui/system": "^5.12.1",
