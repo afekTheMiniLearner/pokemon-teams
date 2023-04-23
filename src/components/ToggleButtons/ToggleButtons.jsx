@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { ToggleButton as MuiToggleButton } from "@mui/material/ToggleButton";
-import { ToggleButtonGroup as MuiToggleButtonGroup } from "@mui/material/ToggleButtonGroup";
+import {
+  ToggleButtonGroup as MuiToggleButtonGroup,
+  ToggleButton as MuiToggleButton,
+} from "@mui/material";
 
 export default function ToggleButtons({
   size,
