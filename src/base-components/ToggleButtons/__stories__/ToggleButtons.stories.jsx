@@ -1,10 +1,10 @@
 import React from "react";
 
-import ToggleButton from "../ToggleButton";
+import ToggleButtons from "../ToggleButtons";
 
 export default {
-  title: "components/ToggleButton",
-  component: ToggleButton,
+  title: "base-components/ToggleButtons",
+  component: ToggleButtons,
   parameters: {
     controls: {
       exclude: /^(onChange)$/g,
@@ -27,7 +27,7 @@ export default {
   ],
 };
 
-export const Default = () => <ToggleButton />;
+export const Default = () => <ToggleButtons />;
 Default.decorators = [
   (Story) => (
     <div
@@ -44,7 +44,7 @@ Default.decorators = [
   ),
 ];
 
-const Template = (args) => <ToggleButton {...args} />;
+const Template = (args) => <ToggleButtons {...args} />;
 
 export const Custom = Template.bind({});
 Custom.argTypes = {
@@ -53,9 +53,13 @@ Custom.argTypes = {
     options: ["small", "medium", "large"],
     defaultValue: "small",
   },
-  value: {
-    control: { type: "text" },
-    defaultValue: "check",
+  values: {
+    control: "inline-radio",
+    options: [
+      ["WEB", "ANDROID", "IPHONE"],
+      ["A", "B"],
+    ],
+    defaultValue: ["WEB", "ANDROID", "IOS"],
   },
   color: {
     control: { type: "color" },
@@ -66,7 +70,7 @@ Custom.argTypes = {
     options: ["horizontal", "vertical"],
     defaultValue: "horizontal",
   },
-  selected: {
+  exclusive: {
     control: { type: "boolean" },
     defaultValue: false,
   },
