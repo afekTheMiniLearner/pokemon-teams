@@ -1,54 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import {
-  ToggleButtonGroup as MuiToggleButtonGroup,
-  ToggleButton as MuiToggleButton,
-} from "@mui/material";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import ToggleButton from "@mui/material/ToggleButton";
 
 export default function ToggleDataButtons({
   size,
   color,
   values,
   orientation,
-  onChange,
-  children,
+  sx,
   ...props
 }) {
+  const [dataType, setDataType] = useState(values?.[0]);
+
+  const onChangeHandler = (_event, newDataType) => {
+    setDataType(newDataType);
+  };
+
   return (
-    <MuiToggleButtonGroup
+    <ToggleButtonGroup
+      value={dataType}
       size={size}
       color={color}
       orientation={orientation}
       exclusive
-      onChange={onChange}
+      onChange={onChangeHandler}
+      aria-label="Platform"
       {...props}
     >
       {values.map((value, i) => {
         return (
           // eslint-disable-next-line react/no-array-index-key
-          <MuiToggleButton key={i} value={value}>
+          <ToggleButton key={i} value={value}>
             {value}
-          </MuiToggleButton>
+          </ToggleButton>
         );
       })}
-      {children}
-    </MuiToggleButtonGroup>
+    </ToggleButtonGroup>
   );
 }
 
 ToggleDataButtons.propTypes = {
   size: PropTypes.string,
-  color: PropTypes.string,
+  color: PropTypes.oneOf([
+    "primary",
+    "secondary",
+    "error",
+    "warning",
+    "info",
+    "success",
+    "text",
+  ]),
   values: PropTypes.arrayOf(PropTypes.string),
   orientation: PropTypes.string,
-  onChange: PropTypes.string,
+  sx: PropTypes.shape({}),
 };
-
 ToggleDataButtons.defaultProps = {
-  size: undefined,
-  color: "default",
+  size: "small",
+  color: "success",
   values: [],
   orientation: "horizontal",
-  onChange: undefined,
+  sx: {},
 };
