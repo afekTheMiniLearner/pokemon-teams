@@ -1,12 +1,21 @@
 import React from "react";
+import DraftsIcon from "@mui/icons-material/Drafts";
 
-import { ToggleDataButtons } from "@components";
-import { TOGGLE_DATA_OPTIONS } from "@utils";
+import { GamesList } from "@components";
 
 function App() {
+  const list = [
+    {
+      text: "Fire red",
+      icon: <DraftsIcon />,
+    },
+    {
+      text: "Leaf green",
+    },
+  ];
   return (
     <div className="app-container">
-      <ToggleDataButtons values={TOGGLE_DATA_OPTIONS} />
+      <GamesList items={list} />
     </div>
   );
 }
