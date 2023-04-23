@@ -7,17 +7,17 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
 
-export default function GamesList({ items, children }) {
+export default function GamesList({ items, children, onClick }) {
   return (
     <List>
       {items.map((item, i) => {
-        const { text, icon, onClick } = item;
+        const { itemName, icon } = item;
         return (
           // eslint-disable-next-line react/no-array-index-key
-          <ListItem key={i} onClick={onClick} disablePadding>
+          <ListItem key={i} onClick={() => onClick(itemName)} disablePadding>
             <ListItemButton>
               {icon ? <ListItemIcon>{icon}</ListItemIcon> : null}
-              <ListItemText primary={text} />
+              <ListItemText primary={itemName} />
               {children}
             </ListItemButton>
           </ListItem>
@@ -31,12 +31,13 @@ GamesList.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       icon: PropTypes.node,
-      text: PropTypes.string,
-      onClick: PropTypes.func,
+      itemName: PropTypes.string,
     })
   ),
+  onClick: PropTypes.func,
 };
 
 GamesList.defaultProps = {
   items: [{}],
+  onClick: undefined,
 };

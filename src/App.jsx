@@ -1,21 +1,16 @@
-import React from "react";
-import DraftsIcon from "@mui/icons-material/Drafts";
+import React, { useState } from "react";
 
 import { GamesList } from "@components";
+import { GAMES_LIST } from "@utils";
 
 function App() {
-  const list = [
-    {
-      text: "Fire red",
-      icon: <DraftsIcon />,
-    },
-    {
-      text: "Leaf green",
-    },
-  ];
+  const [currentGame, setCurrentGame] = useState(undefined);
+
+  console.log("🚀 ~ file: App.jsx:9 ~ App ~ currentGame:", currentGame);
+
   return (
     <div className="app-container">
-      <GamesList items={list} />
+      <GamesList items={GAMES_LIST} onClick={setCurrentGame} />
     </div>
   );
 }
