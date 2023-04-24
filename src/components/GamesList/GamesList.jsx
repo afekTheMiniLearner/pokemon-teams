@@ -11,13 +11,21 @@ export default function GamesList({ items, children, onClick }) {
   return (
     <List>
       {items.map((item, i) => {
-        const { itemName, icon } = item;
+        const { name, icon, style } = item;
         return (
-          // eslint-disable-next-line react/no-array-index-key
-          <ListItem key={i} onClick={() => onClick(itemName)} disablePadding>
+          <ListItem // eslint-disable-next-line react/no-array-index-key
+            key={i}
+            onClick={() => onClick(name)}
+            disablePadding
+            sx={style}
+          >
             <ListItemButton>
-              {icon ? <ListItemIcon>{icon}</ListItemIcon> : null}
-              <ListItemText primary={itemName} />
+              <ListItemText primary={name} />
+              {icon ? (
+                <ListItemIcon sx={{ justifyContent: "center" }}>
+                  {icon}
+                </ListItemIcon>
+              ) : null}
               {children}
             </ListItemButton>
           </ListItem>
