@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 
-import { GamesList } from "@components";
-import { GAMES_LIST } from "@utils";
+import { Card } from "@base-components";
 
 function App() {
-  const [currentGame, setCurrentGame] = useState(undefined);
-
-  console.log("🚀 ~ file: App.jsx:9 ~ App ~ currentGame:", currentGame);
-
   return (
     <div className="app-container">
-      <GamesList items={GAMES_LIST} onClick={setCurrentGame} />
+      <Card
+        imageUrl="/pokemons/charizard.jpg"
+        title="Charizard"
+        information="The strongest pokemon to ever exist IMO"
+      />
     </div>
   );
 }
