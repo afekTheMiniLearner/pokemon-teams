@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
@@ -7,20 +7,20 @@ import ToggleButton from "@mui/material/ToggleButton";
 export default function ToggleDataButtons({
   size,
   color,
+  currentValue,
+  setValue,
   values,
   orientation,
   sx,
   ...props
 }) {
-  const [dataType, setDataType] = useState(values?.[0]);
-
   const onChangeHandler = (_event, newDataType) => {
-    setDataType(newDataType);
+    setValue(newDataType);
   };
 
   return (
     <ToggleButtonGroup
-      value={dataType}
+      value={currentValue}
       size={size}
       color={color}
       orientation={orientation}
@@ -52,6 +52,8 @@ ToggleDataButtons.propTypes = {
     "success",
     "text",
   ]),
+  currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  setValue: PropTypes.func,
   values: PropTypes.arrayOf(PropTypes.string),
   orientation: PropTypes.string,
   sx: PropTypes.shape({}),
@@ -59,6 +61,8 @@ ToggleDataButtons.propTypes = {
 ToggleDataButtons.defaultProps = {
   size: "small",
   color: "success",
+  currentValue: undefined,
+  setValue: undefined,
   values: [],
   orientation: "horizontal",
   sx: {},

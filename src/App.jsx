@@ -1,13 +1,13 @@
 import React from "react";
 
-import { Card } from "@base-components";
+import { PokemonCard } from "@components";
 
 function App() {
   return (
     <div className="app-container">
-      <Card
+      <PokemonCard
         imageUrl="/pokemons/charizard.jpg"
-        title="Charizard"
+        pokemonName="Charizard"
         information="The strongest pokemon to ever exist IMO"
       />
     </div>
