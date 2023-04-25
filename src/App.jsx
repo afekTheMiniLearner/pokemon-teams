@@ -1,5 +1,6 @@
 import React from "react";
 
+import { Chip } from "@base-components";
 import { PokemonCard } from "@components";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         pokemonName="Charizard"
         information="The most impressive pokemon to ever exist in my opinion"
       />
+      <Chip label="attack" />
     </div>
   );
 }

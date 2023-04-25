@@ -1,2 +1,2 @@
-// eslint-disable-next-line import/prefer-default-export
 export { default as Card } from "./Card/Card";
+export { default as Chip } from "./Chip/Chip";
