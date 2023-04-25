@@ -8,7 +8,7 @@ function App() {
       <PokemonCard
         imageUrl="/pokemons/charizard.jpg"
         pokemonName="Charizard"
-        information="The strongest pokemon to ever exist IMO"
+        information="The most impressive pokemon to ever exist in my opinion"
       />
     </div>
   );

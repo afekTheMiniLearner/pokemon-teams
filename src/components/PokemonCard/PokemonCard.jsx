@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { Card } from "@base-components";
-import ToggleDataButtons from "@components/ToggleDataButtons/ToggleDataButtons";
+import { getInformationFromAttr } from "@utils";
 
 export default function PokemonCard({
   pokemonName,
@@ -13,19 +13,18 @@ export default function PokemonCard({
   const [dataType, setDataType] = useState("Basic");
 
   return dataType === "Basic" ? (
-    <Card title={pokemonName} information={information} imageUrl={imageUrl}>
-      <div>
-        <ToggleDataButtons
-          currentValue={dataType}
-          setValue={setDataType}
-          values={["Basic", "Advanced"]}
-        />
-      </div>
-    </Card>
+    <Card
+      title={pokemonName}
+      information={information}
+      imageUrl={imageUrl}
+      onClick={() => setDataType("Advanced")}
+    />
   ) : (
-    <Card title={pokemonName} imageUrl={imageUrl}>
-      {pokemonAttr}
-    </Card>
+    <Card
+      title={pokemonName}
+      information={getInformationFromAttr(pokemonAttr)}
+      onClick={() => setDataType("Basic")}
+    />
   );
 }
 
