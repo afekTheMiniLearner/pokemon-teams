@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import { Card } from "@base-components";
-import { getInformationFromAttr } from "@utils";
+import { Card, ChipsBoxData } from "@base-components";
+import { getAttributesArray } from "@utils";
 
 export default function PokemonCard({
   pokemonName,
@@ -20,11 +20,9 @@ export default function PokemonCard({
       onClick={() => setDataType("Advanced")}
     />
   ) : (
-    <Card
-      title={pokemonName}
-      information={getInformationFromAttr(pokemonAttr)}
-      onClick={() => setDataType("Basic")}
-    />
+    <Card title={pokemonName} onClick={() => setDataType("Basic")}>
+      <ChipsBoxData labels={getAttributesArray(pokemonAttr)} isClickAble />
+    </Card>
   );
 }
 
