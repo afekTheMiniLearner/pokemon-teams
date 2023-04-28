@@ -1,12 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Box from "@mui/material/Box";
 
 import Chip from "@base-components/Chip/Chip";
+import { StyledBox } from "./ChipsBoxData.styled";
 
 export default function ChipsBoxData({ labels, isClickAble, ...props }) {
   return (
-    <Box>
+    <StyledBox>
       {labels.map((label, i) => {
         return (
           <Chip
@@ -18,7 +18,7 @@ export default function ChipsBoxData({ labels, isClickAble, ...props }) {
           />
         );
       })}
-    </Box>
+    </StyledBox>
   );
 }
 
