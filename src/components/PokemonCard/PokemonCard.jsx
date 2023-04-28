@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import { ChipsBoxData } from "@base-components";
+import { ChipsBoxData, Card } from "@base-components";
 import { getAttributesArray } from "@utils";
-import { StyledCard } from "./PokemonCard.styled";
 
 export default function PokemonCard({
   pokemonName,
@@ -14,20 +13,24 @@ export default function PokemonCard({
   const [dataType, setDataType] = useState("Basic");
 
   return dataType === "Basic" ? (
-    <StyledCard
+    <Card
       title={pokemonName}
       information={information}
       imageUrl={imageUrl}
       onClick={() => setDataType("Advanced")}
     />
   ) : (
-    <StyledCard
+    <Card
       title={pokemonName}
       imageUrl={imageUrl}
       onClick={() => setDataType("Basic")}
     >
-      <ChipsBoxData labels={getAttributesArray(pokemonAttr)} isClickAble />
-    </StyledCard>
+      <ChipsBoxData
+        size="small"
+        labels={getAttributesArray(pokemonAttr)}
+        isClickAble
+      />
+    </Card>
   );
 }
 

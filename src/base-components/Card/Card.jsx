@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Card as MuiCard } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
+
+import { MuiCard } from "./Card.styled";
 
 export default function Card({
   title,
