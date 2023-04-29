@@ -9,6 +9,7 @@ function App() {
         imageUrl="/pokemons/charizard.jpg"
         pokemonName="Charizard"
         information="The most impressive pokemon to ever exist in my opinion"
+        attributes={{ attack: 20 }}
       />
     </div>
   );
