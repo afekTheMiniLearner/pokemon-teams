@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Chip from "@base-components/Chip/Chip";
-import { StyledBox } from "./ChipsBoxData.styled";
+import { StyledBox } from "./ChipsBox.styled";
 
-export default function ChipsBoxData({ labels, isClickAble, ...props }) {
+export default function ChipsBox({ labels, isClickAble, ...props }) {
   return (
     <StyledBox>
       {labels.map((label, i) => {
@@ -22,12 +22,12 @@ export default function ChipsBoxData({ labels, isClickAble, ...props }) {
   );
 }
 
-ChipsBoxData.propTypes = {
+ChipsBox.propTypes = {
   labels: PropTypes.arrayOf(PropTypes.string),
   isClickAble: PropTypes.bool,
 };
 
-ChipsBoxData.defaultProps = {
+ChipsBox.defaultProps = {
   labels: [],
   isClickAble: false,
 };

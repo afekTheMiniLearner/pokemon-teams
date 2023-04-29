@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 
-import { ChipsBoxData, Card } from "@base-components";
+import { ChipsBox, Card } from "@base-components";
 import { getAttributesArray } from "@utils";
 
 export default function PokemonCard({
@@ -25,7 +25,7 @@ export default function PokemonCard({
       imageUrl={imageUrl}
       onClick={() => setDataType("Basic")}
     >
-      <ChipsBoxData
+      <ChipsBox
         size="small"
         labels={getAttributesArray(pokemonAttr)}
         isClickAble
