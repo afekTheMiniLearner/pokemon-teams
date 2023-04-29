@@ -27,5 +27,6 @@ export const ATTRIBUTES_LIST = [
   "spAttack",
   "spDefense",
   "health",
-  "total",
 ];
+
+

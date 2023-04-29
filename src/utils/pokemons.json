@@ -1,0 +1,64 @@
+{
+  "Fire red": [
+    {
+      "pokemonName": "Charizard",
+      "information": "The mightiest dragon to ever exist",
+      "imageUrl": "/pokemons/Charizard.jpg",
+      "attributes": {
+        "attack": 20,
+        "defense": 130,
+        "spAttack": 20,
+        "spDefense": 20,
+        "health": 110
+      }
+    },
+    {
+      "pokemonName": "Vileplume",
+      "information": "Perfect pokemon for one shot other non fire types",
+      "imageUrl": "/pokemons/Vileplume.png",
+      "attributes": {
+        "attack": 20,
+        "defense": 130,
+        "spAttack": 20,
+        "spDefense": 20,
+        "health": 110
+      }
+    },
+    {
+      "pokemonName": "Pidgeot",
+      "information": "The king of all birds, high speed, high power, and beautiful pokemon",
+      "imageUrl": "/pokemons/Pidgeot.png",
+      "attributes": {
+        "attack": 20,
+        "defense": 130,
+        "spAttack": 20,
+        "spDefense": 20,
+        "health": 110
+      }
+    },
+    {
+      "pokemonName": "Gyarados",
+      "information": "Mighty water pokemon, very high attack and high hp",
+      "imageUrl": "/pokemons/Gyarados.png",
+      "attributes": {
+        "attack": 20,
+        "defense": 130,
+        "spAttack": 20,
+        "spDefense": 20,
+        "health": 110
+      }
+    },
+    {
+      "pokemonName": "Hitmonlee",
+      "information": "Pokemon team cannot be really perfect without that fighter pokemon",
+      "imageUrl": "/pokemons/Hitmonlee.png",
+      "attributes": {
+        "attack": 20,
+        "defense": 130,
+        "spAttack": 20,
+        "spDefense": 20,
+        "health": 110
+      }
+    }
+  ]
+}
