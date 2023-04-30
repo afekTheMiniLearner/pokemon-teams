@@ -6,7 +6,7 @@ import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 
 export const MuiCard = styled(Card)`
-  height: 280px;
+  height: 290px;
   width: 310px;
   margin: 0 20px;
 `;
