@@ -8,6 +8,7 @@ function App() {
   return (
     <div className="app-container">
       <Title text="My favorite pokemon's team" />
+
       <PokemonCardsBox pokemonsTeam={teams["Fire red"]} />
     </div>
   );
