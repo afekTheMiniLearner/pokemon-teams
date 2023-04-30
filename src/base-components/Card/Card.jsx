@@ -34,7 +34,10 @@ export default function Card({
             </MuiTypography>
           ) : null}
           {information ? (
-            <MuiTypography variant="body2" color="text.secondary">
+            <MuiTypography
+              variant="body2"
+              color="text.secondary"
+            >
               {information}
             </MuiTypography>
           ) : null}

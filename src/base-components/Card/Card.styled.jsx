@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 
 export const MuiCard = styled(Card)`
   height: 290px;
-  width: 310px;
+  width: 370px;
   margin: 0 20px;
 `;
 

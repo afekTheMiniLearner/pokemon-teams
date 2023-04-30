@@ -7,8 +7,6 @@ export const MuiBox = styled(Box)`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  min-height: 590px;
-  min-width: 1400px;
   margin-top: 150px;
   gap: 20px;
 `;
