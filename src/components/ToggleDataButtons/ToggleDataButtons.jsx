@@ -11,7 +11,6 @@ export default function ToggleDataButtons({
   setValue,
   values,
   orientation,
-  sx,
   ...props
 }) {
   const onChangeHandler = (_event, newDataType) => {
@@ -55,7 +54,6 @@ ToggleDataButtons.propTypes = {
   setValue: PropTypes.func,
   values: PropTypes.arrayOf(PropTypes.string),
   orientation: PropTypes.string,
-  sx: PropTypes.shape({}),
 };
 ToggleDataButtons.defaultProps = {
   size: "small",
@@ -64,5 +62,4 @@ ToggleDataButtons.defaultProps = {
   setValue: undefined,
   values: [],
   orientation: "horizontal",
-  sx: {},
 };

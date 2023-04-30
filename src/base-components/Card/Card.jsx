@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 
-import { MuiCard } from "./Card.styled";
+import { StyledCard } from "./Card.styled";
 
 export default function Card({
   title,
@@ -15,7 +15,7 @@ export default function Card({
   children,
 }) {
   return (
-    <MuiCard sx={{ maxWidth: 345 }} onClick={onClick}>
+    <StyledCard onClick={onClick}>
       <CardActionArea>
         {imageUrl ? (
           <CardMedia
@@ -39,7 +39,7 @@ export default function Card({
           {children}
         </CardContent>
       </CardActionArea>
-    </MuiCard>
+    </StyledCard>
   );
 }
 

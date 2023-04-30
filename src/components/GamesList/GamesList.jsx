@@ -5,7 +5,8 @@ import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
+
+import { StyledListItemIcon } from "./GamesList.styled";
 
 export default function GamesList({ items, children, onClick }) {
   return (
@@ -21,11 +22,7 @@ export default function GamesList({ items, children, onClick }) {
           >
             <ListItemButton>
               <ListItemText primary={name} />
-              {icon ? (
-                <ListItemIcon sx={{ justifyContent: "center" }}>
-                  {icon}
-                </ListItemIcon>
-              ) : null}
+              {icon ? <StyledListItemIcon>{icon}</StyledListItemIcon> : null}
               {children}
             </ListItemButton>
           </ListItem>
