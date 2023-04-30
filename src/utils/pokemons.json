@@ -39,7 +39,7 @@
     {
       "pokemonName": "Gyarados",
       "information": "Mighty water pokemon, very high attack and high hp",
-      "imageUrl": "/pokemons/Gyarados.png",
+      "imageUrl": "/pokemons/Gyarados.jpg",
       "attributes": {
         "attack": 20,
         "defense": 130,
