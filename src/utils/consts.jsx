@@ -11,12 +11,12 @@ export const TOGGLE_DATA_OPTIONS = ["Main", "Advanced"];
 export const GAMES_LIST = [
   {
     name: "Fire red",
-    style: { color: "red" },
+    style: { color: "red !important" },
     icon: <BsFire />,
   },
   {
     name: "Emerald",
-    style: { color: "rgb(38, 154, 25)" },
+    style: { color: "rgb(38, 154, 25) !important" },
     icon: <TbDiamondFilled />,
   },
 ];
@@ -28,5 +28,3 @@ export const ATTRIBUTES_LIST = [
   "spDefense",
   "health",
 ];
-
-
