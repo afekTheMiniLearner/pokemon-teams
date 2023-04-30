@@ -13,6 +13,7 @@ export default function Chip({
   icon,
   deleteIcon,
   avatar,
+  ...props
 }) {
   return (
     <MuiChip
@@ -26,6 +27,7 @@ export default function Chip({
       icon={icon}
       deleteIcon={deleteIcon}
       avatar={avatar}
+      {...props}
     />
   );
 }

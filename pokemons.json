@@ -11,7 +11,8 @@
         "speed": 100,
         "defense": 78,
         "spDefense": 85
-      }
+      },
+      "types": ["fire", "flying"]
     },
     {
       "pokemonName": "Vileplume",
@@ -24,7 +25,8 @@
         "speed": 50,
         "defense": 85,
         "spDefense": 90
-      }
+      },
+      "types": ["grass", "poison"]
     },
     {
       "pokemonName": "Pidgeot",
@@ -37,7 +39,8 @@
         "speed": 101,
         "defense": 75,
         "spDefense": 70
-      }
+      },
+      "types": ["normal", "flying"]
     },
     {
       "pokemonName": "Gyarados",
@@ -50,7 +53,8 @@
         "speed": 81,
         "defense": 79,
         "spDefense": 100
-      }
+      },
+      "types": ["water", "flying"]
     },
     {
       "pokemonName": "Hitmonlee",
@@ -63,7 +67,8 @@
         "speed": 87,
         "defense": 53,
         "spDefense": 110
-      }
+      },
+      "types": ["fighting"]
     }
   ],
   "Emerald": [
@@ -78,7 +83,8 @@
         "speed": 120,
         "defense": 65,
         "spDefense": 85
-      }
+      },
+      "types": ["grass"]
     },
     {
       "pokemonName": "Slaking",
@@ -91,7 +97,8 @@
         "speed": 120,
         "defense": 65,
         "spDefense": 85
-      }
+      },
+      "types": ["normal"]
     },
     {
       "pokemonName": "Starmie",
@@ -104,7 +111,8 @@
         "speed": 115,
         "defense": 85,
         "spDefense": 85
-      }
+      },
+      "types": ["water", "psychic"]
     },
     {
       "pokemonName": "Claydol",
@@ -117,7 +125,8 @@
         "speed": 75,
         "defense": 105,
         "spDefense": 120
-      }
+      },
+      "types": ["ground", "psychic"]
     },
     {
       "pokemonName": "Pinsir",
@@ -130,7 +139,8 @@
         "speed": 85,
         "defense": 100,
         "spDefense": 70
-      }
+      },
+      "types": ["bug"]
     }
   ]
 }

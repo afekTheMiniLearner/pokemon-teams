@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { Card } from "@base-components";
-import PokemonChips from "../PokemonChips/PokemonChips";
+import { getAttributesArray } from "@utils";
+import PokemonChips from "@components/PokemonChips/PokemonChips";
 
 export default function PokemonCard({
   pokemonName,
   information,
   imageUrl,
   attributes,
+  types,
 }) {
   const [dataType, setDataType] = useState("Basic");
 
@@ -18,14 +20,19 @@ export default function PokemonCard({
       information={information}
       imageUrl={imageUrl}
       onClick={() => setDataType("Advanced")}
-    />
+    >
+      <PokemonChips
+        boxStyle={{ position: "absolute", right: 0, top: 0, margin: "2px" }}
+        chipContent={types}
+      />
+    </Card>
   ) : (
     <Card
       title={pokemonName}
       imageUrl={imageUrl}
       onClick={() => setDataType("Basic")}
     >
-      <PokemonChips attributes={attributes} isClickAble />
+      <PokemonChips chipContent={getAttributesArray(attributes)} isClickAble />
     </Card>
   );
 }
@@ -41,6 +48,7 @@ PokemonCard.propTypes = {
     spDefense: PropTypes.number,
     health: PropTypes.number,
   }),
+  types: PropTypes.arrayOf(PropTypes.string),
 };
 
 PokemonCard.defaultProps = {
@@ -48,4 +56,5 @@ PokemonCard.defaultProps = {
   information: undefined,
   imageUrl: undefined,
   attributes: {},
+  types: [],
 };

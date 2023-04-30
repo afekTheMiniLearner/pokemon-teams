@@ -2,31 +2,33 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { ChipsBox } from "@base-components";
-import { getAttributesArray } from "@utils";
 
-export default function PokemonChips({ attributes, isClickAble, ...props }) {
+export default function PokemonChips({
+  chipContent,
+  isClickAble,
+  boxStyle,
+  ...props
+}) {
   return (
     <ChipsBox
       size="small"
-      labels={getAttributesArray(attributes)}
+      labels={chipContent}
       isClickAble
+      boxStyle={boxStyle}
       {...props}
     />
   );
 }
 
 PokemonChips.propTypes = {
-  attributes: PropTypes.shape({
-    attack: PropTypes.number,
-    defense: PropTypes.number,
-    spAttack: PropTypes.number,
-    spDefense: PropTypes.number,
-    health: PropTypes.number,
-  }),
+  chipContent: PropTypes.arrayOf(PropTypes.string),
   isClickAble: PropTypes.bool,
+  // eslint-disable-next-line react/forbid-prop-types
+  boxStyle: PropTypes.object,
 };
 
 PokemonChips.defaultProps = {
-  attributes: {},
+  chipContent: [],
   isClickAble: false,
+  boxStyle: {},
 };

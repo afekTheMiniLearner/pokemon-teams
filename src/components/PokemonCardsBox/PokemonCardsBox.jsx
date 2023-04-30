@@ -7,7 +7,8 @@ export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
   return (
     <MuiBox {...props}>
       {pokemonsTeam.map((pokemon, i) => {
-        const { pokemonName, information, attributes, imageUrl } = pokemon;
+        const { pokemonName, information, attributes, types, imageUrl } =
+          pokemon;
 
         return (
           <MuiPokemonCard
@@ -16,6 +17,7 @@ export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
             information={information}
             attributes={attributes}
             imageUrl={imageUrl}
+            types={types}
           />
         );
       })}
