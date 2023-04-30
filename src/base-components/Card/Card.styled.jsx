@@ -1,8 +1,19 @@
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import CardActionArea from "@mui/material/CardActionArea";
+import Typography from "@mui/material/Typography";
 
-// eslint-disable-next-line import/prefer-default-export
-export const StyledCard = styled(Card)`
+export const MuiCard = styled(Card)`
   height: 280px;
   width: 350px;
 `;
+
+export const MuiCardContent = styled(CardContent)``;
+
+export const MuiCardMedia = styled(CardMedia)``;
+
+export const MuiCardActionArea = styled(CardActionArea)``;
+
+export const MuiTypography = styled(Typography)``;

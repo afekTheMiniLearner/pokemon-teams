@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Chip as MuiChip } from "@mui/material";
+import MuiChip from "@mui/material/Chip";
 
 export default function Chip({
   label,

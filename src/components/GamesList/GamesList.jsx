@@ -1,34 +1,35 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-
-import { StyledListItemIcon } from "./GamesList.styled";
+import {
+  MuiList,
+  MuiListItem,
+  MuiListItemButton,
+  MuiListItemIcon,
+  MuiListItemText,
+} from "./GamesList.styled";
 
 export default function GamesList({ items, children, onClick }) {
   return (
-    <List>
+    <MuiList>
       {items.map((item, i) => {
         const { name, icon, style } = item;
         return (
-          <ListItem
+          <MuiListItem
             key={i}
             onClick={() => onClick(name)}
             disablePadding
             sx={style}
           >
-            <ListItemButton>
-              <ListItemText primary={name} />
-              {icon ? <StyledListItemIcon>{icon}</StyledListItemIcon> : null}
+            <MuiListItemButton>
+              <MuiListItemText primary={name} />
+              {icon ? <MuiListItemIcon>{icon}</MuiListItemIcon> : null}
               {children}
-            </ListItemButton>
-          </ListItem>
+            </MuiListItemButton>
+          </MuiListItem>
         );
       })}
-    </List>
+    </MuiList>
   );
 }
 

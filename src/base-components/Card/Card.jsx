@@ -1,11 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import CardActionArea from "@mui/material/CardActionArea";
-import Typography from "@mui/material/Typography";
 
-import { StyledCard } from "./Card.styled";
+import {
+  MuiCard,
+  MuiCardActionArea,
+  MuiCardContent,
+  MuiCardMedia,
+  MuiTypography,
+} from "./Card.styled";
 
 export default function Card({
   title,
@@ -15,31 +17,31 @@ export default function Card({
   children,
 }) {
   return (
-    <StyledCard onClick={onClick}>
-      <CardActionArea>
+    <MuiCard onClick={onClick}>
+      <MuiCardActionArea>
         {imageUrl ? (
-          <CardMedia
+          <MuiCardMedia
             component="img"
             height="150"
             image={imageUrl}
             alt={title}
           />
         ) : null}
-        <CardContent>
+        <MuiCardContent>
           {title ? (
-            <Typography gutterBottom variant="h5" component="div">
+            <MuiTypography gutterBottom variant="h5" component="div">
               {title}
-            </Typography>
+            </MuiTypography>
           ) : null}
           {information ? (
-            <Typography variant="body2" color="text.secondary">
+            <MuiTypography variant="body2" color="text.secondary">
               {information}
-            </Typography>
+            </MuiTypography>
           ) : null}
           {children}
-        </CardContent>
-      </CardActionArea>
-    </StyledCard>
+        </MuiCardContent>
+      </MuiCardActionArea>
+    </MuiCard>
   );
 }
 

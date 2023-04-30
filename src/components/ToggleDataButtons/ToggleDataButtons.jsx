@@ -1,8 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import ToggleButton from "@mui/material/ToggleButton";
+import {
+  MuiToggleButton,
+  MuiToggleButtonGroup,
+} from "./ToggleDataButtons.styled";
 
 export default function ToggleDataButtons({
   size,
@@ -18,7 +20,7 @@ export default function ToggleDataButtons({
   };
 
   return (
-    <ToggleButtonGroup
+    <MuiToggleButtonGroup
       value={currentValue}
       size={size}
       color={color}
@@ -30,12 +32,12 @@ export default function ToggleDataButtons({
     >
       {values.map((value, i) => {
         return (
-          <ToggleButton key={i} value={value}>
+          <MuiToggleButton key={i} value={value}>
             {value}
-          </ToggleButton>
+          </MuiToggleButton>
         );
       })}
-    </ToggleButtonGroup>
+    </MuiToggleButtonGroup>
   );
 }
 

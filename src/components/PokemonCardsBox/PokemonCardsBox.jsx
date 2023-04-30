@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { StyledBox } from "./PokemonCardsBox.styled";
-import PokemonCard from "../PokemonCard/PokemonCard";
+import { MuiBox, MuiPokemonCard } from "./PokemonCardsBox.styled";
 
 export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
   return (
-    <StyledBox {...props}>
+    <MuiBox {...props}>
       {pokemonsTeam.map((pokemon, i) => {
         const { pokemonName, information, attributes, imageUrl } = pokemon;
 
         return (
-          <PokemonCard
+          <MuiPokemonCard
             key={i}
             pokemonName={pokemonName}
             information={information}
@@ -20,7 +19,7 @@ export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
           />
         );
       })}
-    </StyledBox>
+    </MuiBox>
   );
 }
 
