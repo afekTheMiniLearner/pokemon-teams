@@ -7,7 +7,8 @@ export const MuiBox = styled(Box)`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
+  margin-top: 150px;
 `;
 
 export const MuiPokemonCard = styled(PokemonCard)``;

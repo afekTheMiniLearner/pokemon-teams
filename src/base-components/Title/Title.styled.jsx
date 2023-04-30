@@ -4,7 +4,8 @@ import Typography from "@mui/material/Typography";
 
 export const MuiBox = styled(Box)`
   max-width: 100%;
-  margin-bottom: 30px;
+  position: absolute;
+  top: 0;
 `;
 
 export const MuiTypography = styled(Typography)``;
