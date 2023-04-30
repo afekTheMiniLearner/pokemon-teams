@@ -5,11 +5,12 @@
       "information": "The mightiest dragon to ever exist",
       "imageUrl": "/pokemons/Fire red/Charizard.jpg",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     },
     {
@@ -17,11 +18,12 @@
       "information": "Perfect pokemon for one shot other non fire types",
       "imageUrl": "/pokemons/Fire red/Vileplume.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     },
     {
@@ -29,11 +31,12 @@
       "information": "The king of all birds, high speed, high power, and beautiful pokemon",
       "imageUrl": "/pokemons/Fire red/Pidgeot.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     },
     {
@@ -41,11 +44,12 @@
       "information": "Mighty water pokemon, very high attack and high hp",
       "imageUrl": "/pokemons/Fire red/Gyarados.jpg",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     },
     {
@@ -53,73 +57,79 @@
       "information": "Pokemon team cannot be really perfect without that fighter pokemon",
       "imageUrl": "/pokemons/Fire red/Hitmonlee.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     }
   ],
   "Emerald": [
     {
-      "pokemonName": "Charizard",
-      "information": "The mightiest dragon to ever exist",
-      "imageUrl": "/pokemons/Emerald/Charizard.jpg",
+      "pokemonName": "Sceptile",
+      "information": "It agilely leaps about the jungle and uses the sharp leaves on its arms to strike its prey.",
+      "imageUrl": "/pokemons/Emerald/Sceptile.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     },
     {
-      "pokemonName": "Vileplume",
-      "information": "Perfect pokemon for one shot other non fire types",
-      "imageUrl": "/pokemons/Emerald/Vileplume.png",
+      "pokemonName": "Slaking",
+      "information": "The world's laziest Pokémon. It moves to another spot when there's no food left within its reach.",
+      "imageUrl": "/pokemons/Emerald/Slaking.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 70,
+        "attack": 85,
+        "defense": 65,
+        "spAttack": 105,
+        "spDefense": 85,
+        "speed": 120
       }
     },
     {
-      "pokemonName": "Pidgeot",
-      "information": "The king of all birds, high speed, high power, and beautiful pokemon",
-      "imageUrl": "/pokemons/Emerald/Pidgeot.png",
+      "pokemonName": "Starmie",
+      "information": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
+      "imageUrl": "/pokemons/Emerald/Starmie.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 60,
+        "attack": 75,
+        "defense": 85,
+        "spAttack": 100,
+        "spDefense": 85,
+        "speed": 115
       }
     },
     {
-      "pokemonName": "Gyarados",
-      "information": "Mighty water pokemon, very high attack and high hp",
-      "imageUrl": "/pokemons/Emerald/Gyarados.jpg",
+      "pokemonName": "Claydol",
+      "information": "An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.",
+      "imageUrl": "/pokemons/Emerald/Claydol.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 60,
+        "attack": 70,
+        "defense": 105,
+        "spAttack": 70,
+        "spDefense": 120,
+        "speed": 75
       }
     },
     {
-      "pokemonName": "Hitmonlee",
-      "information": "Pokemon team cannot be really perfect without that fighter pokemon",
-      "imageUrl": "/pokemons/Emerald/Hitmonlee.png",
+      "pokemonName": "Pinsir",
+      "information": "Swings its long antlers wildly to attack. During cold periods, it hides deep in forests",
+      "imageUrl": "/pokemons/Emerald/Pinsir.png",
       "attributes": {
-        "attack": 20,
-        "defense": 130,
-        "spAttack": 20,
-        "spDefense": 20,
-        "health": 110
+        "health": 65,
+        "attack": 125,
+        "defense": 100,
+        "spAttack": 55,
+        "spDefense": 70,
+        "speed": 85
       }
     }
   ]
