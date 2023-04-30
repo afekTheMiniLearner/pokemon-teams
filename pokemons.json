@@ -2,7 +2,7 @@
   "Fire red": [
     {
       "pokemonName": "Charizard",
-      "information": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
+      "information": "Charizard breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
       "imageUrl": "/pokemons/Fire red/Charizard.jpg",
       "attributes": {
         "health": 78,
