@@ -30,10 +30,12 @@ export default function ToggleDataButtons({
       aria-label="Platform"
       {...props}
     >
-      {values.map((value, i) => {
+      {values?.map((value, i) => {
+        const { name, style, icon } = value;
         return (
-          <MuiToggleButton key={i} value={value}>
-            {value}
+          <MuiToggleButton key={i} value={name} sx={style}>
+            {name}
+            {icon}
           </MuiToggleButton>
         );
       })}
@@ -54,14 +56,21 @@ ToggleDataButtons.propTypes = {
   ]),
   currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   setValue: PropTypes.func,
-  values: PropTypes.arrayOf(PropTypes.string),
+  values: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      // eslint-disable-next-line react/forbid-prop-types
+      style: PropTypes.object,
+      icon: PropTypes.node,
+    })
+  ),
   orientation: PropTypes.string,
 };
 ToggleDataButtons.defaultProps = {
   size: "small",
-  color: "success",
+  color: undefined,
   currentValue: undefined,
   setValue: undefined,
   values: [],
-  orientation: "horizontal",
+  orientation: "vertical",
 };
