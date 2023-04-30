@@ -7,6 +7,7 @@ import teams from "../pokemons.json";
 
 function App() {
   const [team, setTeam] = useState("Fire red");
+  console.log("🚀 ~ file: App.jsx:10 ~ App ~ team:", team);
 
   return (
     <div className="app-container">
