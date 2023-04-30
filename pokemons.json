@@ -7,10 +7,10 @@
       "attributes": {
         "health": 78,
         "attack": 84,
-        "defense": 78,
         "spAttack": 109,
-        "spDefense": 85,
-        "speed": 100
+        "speed": 100,
+        "defense": 78,
+        "spDefense": 85
       }
     },
     {
@@ -20,10 +20,10 @@
       "attributes": {
         "health": 75,
         "attack": 80,
-        "defense": 85,
         "spAttack": 110,
-        "spDefense": 90,
-        "speed": 50
+        "speed": 50,
+        "defense": 85,
+        "spDefense": 90
       }
     },
     {
@@ -33,10 +33,10 @@
       "attributes": {
         "health": 83,
         "attack": 80,
-        "defense": 75,
         "spAttack": 70,
-        "spDefense": 70,
-        "speed": 101
+        "speed": 101,
+        "defense": 75,
+        "spDefense": 70
       }
     },
     {
@@ -46,10 +46,10 @@
       "attributes": {
         "health": 95,
         "attack": 125,
-        "defense": 79,
         "spAttack": 60,
-        "spDefense": 100,
-        "speed": 81
+        "speed": 81,
+        "defense": 79,
+        "spDefense": 100
       }
     },
     {
@@ -59,10 +59,10 @@
       "attributes": {
         "health": 50,
         "attack": 120,
-        "defense": 53,
         "spAttack": 35,
-        "spDefense": 110,
-        "speed": 87
+        "speed": 87,
+        "defense": 53,
+        "spDefense": 110
       }
     }
   ],
@@ -74,10 +74,10 @@
       "attributes": {
         "health": 70,
         "attack": 85,
-        "defense": 65,
         "spAttack": 105,
-        "spDefense": 85,
-        "speed": 120
+        "speed": 120,
+        "defense": 65,
+        "spDefense": 85
       }
     },
     {
@@ -87,10 +87,10 @@
       "attributes": {
         "health": 70,
         "attack": 85,
-        "defense": 65,
         "spAttack": 105,
-        "spDefense": 85,
-        "speed": 120
+        "speed": 120,
+        "defense": 65,
+        "spDefense": 85
       }
     },
     {
@@ -100,10 +100,10 @@
       "attributes": {
         "health": 60,
         "attack": 75,
-        "defense": 85,
         "spAttack": 100,
-        "spDefense": 85,
-        "speed": 115
+        "speed": 115,
+        "defense": 85,
+        "spDefense": 85
       }
     },
     {
@@ -113,10 +113,10 @@
       "attributes": {
         "health": 60,
         "attack": 70,
-        "defense": 105,
         "spAttack": 70,
-        "spDefense": 120,
-        "speed": 75
+        "speed": 75,
+        "defense": 105,
+        "spDefense": 120
       }
     },
     {
@@ -126,10 +126,10 @@
       "attributes": {
         "health": 65,
         "attack": 125,
-        "defense": 100,
         "spAttack": 55,
-        "spDefense": 70,
-        "speed": 85
+        "speed": 85,
+        "defense": 100,
+        "spDefense": 70
       }
     }
   ]

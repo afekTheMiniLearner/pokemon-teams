@@ -2,14 +2,11 @@ import { ATTRIBUTES_LIST } from "./consts";
 
 export function assertAttributes(attributes) {
   const assertedAttributes = { ...attributes };
-  let total = 0;
 
   ATTRIBUTES_LIST.forEach((attr) => {
-    if (assertedAttributes[attr]) total += +assertedAttributes[attr];
-    else assertedAttributes[attr] = "??";
+    if (!assertedAttributes[attr]) assertedAttributes[attr] = "??";
   });
 
-  assertedAttributes.total = total;
   return assertedAttributes;
 }
 

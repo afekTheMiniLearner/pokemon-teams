@@ -7,8 +7,8 @@ import Typography from "@mui/material/Typography";
 
 export const MuiCard = styled(Card)`
   height: 280px;
-  width: 300px;\
-  margin:0 20px;
+  width: 310px;
+  margin: 0 20px;
 `;
 
 export const MuiCardContent = styled(CardContent)``;
