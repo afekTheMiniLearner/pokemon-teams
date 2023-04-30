@@ -2,67 +2,67 @@
   "Fire red": [
     {
       "pokemonName": "Charizard",
-      "information": "The mightiest dragon to ever exist",
+      "information": "Charizard flies around the sky in search of powerful opponents. It breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
       "imageUrl": "/pokemons/Fire red/Charizard.jpg",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "defense": 65,
-        "spAttack": 105,
+        "health": 78,
+        "attack": 84,
+        "defense": 78,
+        "spAttack": 109,
         "spDefense": 85,
-        "speed": 120
+        "speed": 100
       }
     },
     {
       "pokemonName": "Vileplume",
-      "information": "Perfect pokemon for one shot other non fire types",
+      "information": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
       "imageUrl": "/pokemons/Fire red/Vileplume.png",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "defense": 65,
-        "spAttack": 105,
-        "spDefense": 85,
-        "speed": 120
+        "health": 75,
+        "attack": 80,
+        "defense": 85,
+        "spAttack": 110,
+        "spDefense": 90,
+        "speed": 50
       }
     },
     {
       "pokemonName": "Pidgeot",
-      "information": "The king of all birds, high speed, high power, and beautiful pokemon",
+      "information": "It spreads its gorgeous wings widely to intimidate enemies. It races through the skies at Mach-2 speed.",
       "imageUrl": "/pokemons/Fire red/Pidgeot.png",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "defense": 65,
-        "spAttack": 105,
-        "spDefense": 85,
-        "speed": 120
+        "health": 83,
+        "attack": 80,
+        "defense": 75,
+        "spAttack": 70,
+        "spDefense": 70,
+        "speed": 101
       }
     },
     {
       "pokemonName": "Gyarados",
-      "information": "Mighty water pokemon, very high attack and high hp",
+      "information": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times.",
       "imageUrl": "/pokemons/Fire red/Gyarados.jpg",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "defense": 65,
-        "spAttack": 105,
-        "spDefense": 85,
-        "speed": 120
+        "health": 95,
+        "attack": 125,
+        "defense": 79,
+        "spAttack": 60,
+        "spDefense": 100,
+        "speed": 81
       }
     },
     {
       "pokemonName": "Hitmonlee",
-      "information": "Pokemon team cannot be really perfect without that fighter pokemon",
+      "information": "When kicking, the sole of its foot turns as hard as a diamond on impact and destroys its enemy.",
       "imageUrl": "/pokemons/Fire red/Hitmonlee.png",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "defense": 65,
-        "spAttack": 105,
-        "spDefense": 85,
-        "speed": 120
+        "health": 50,
+        "attack": 120,
+        "defense": 53,
+        "spAttack": 35,
+        "spDefense": 110,
+        "speed": 87
       }
     }
   ],
