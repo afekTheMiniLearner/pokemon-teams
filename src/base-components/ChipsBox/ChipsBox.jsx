@@ -10,7 +10,6 @@ export default function ChipsBox({ labels, isClickAble, ...props }) {
       {labels.map((label, i) => {
         return (
           <Chip
-            // eslint-disable-next-line react/no-array-index-key
             key={i}
             label={label}
             onClick={isClickAble ? () => {} : undefined}

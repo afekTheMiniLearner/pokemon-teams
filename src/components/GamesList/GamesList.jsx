@@ -13,7 +13,7 @@ export default function GamesList({ items, children, onClick }) {
       {items.map((item, i) => {
         const { name, icon, style } = item;
         return (
-          <ListItem // eslint-disable-next-line react/no-array-index-key
+          <ListItem
             key={i}
             onClick={() => onClick(name)}
             disablePadding

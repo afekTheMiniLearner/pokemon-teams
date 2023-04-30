@@ -31,7 +31,6 @@ export default function ToggleDataButtons({
     >
       {values.map((value, i) => {
         return (
-          // eslint-disable-next-line react/no-array-index-key
           <ToggleButton key={i} value={value}>
             {value}
           </ToggleButton>

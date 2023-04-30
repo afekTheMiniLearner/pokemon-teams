@@ -7,11 +7,12 @@ import PokemonCard from "../PokemonCard/PokemonCard";
 export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
   return (
     <StyledBox {...props}>
-      {pokemonsTeam.map((pokemon) => {
+      {pokemonsTeam.map((pokemon, i) => {
         const { pokemonName, information, attributes, imageUrl } = pokemon;
 
         return (
           <PokemonCard
+            key={i}
             pokemonName={pokemonName}
             information={information}
             attributes={attributes}
