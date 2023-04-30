@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { PokemonCardsBox, ToggleDataButtons } from "@components";
 import { Title } from "@base-components";
 import { GAMES_LIST } from "@utils";
-import teams from "@utils/pokemons.json";
+import teams from "../pokemons.json";
 
 function App() {
   const [team, setTeam] = useState("Fire red");
