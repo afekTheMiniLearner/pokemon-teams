@@ -7,7 +7,7 @@ import teams from "../pokemons.json";
 
 function App() {
   const [team, setTeam] = useState("Fire red");
-// grid
+
   return (
     <div className="app-container">
       <ToggleDataButtons

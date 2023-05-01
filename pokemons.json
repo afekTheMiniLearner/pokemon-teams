@@ -3,7 +3,7 @@
     {
       "pokemonName": "Charizard",
       "information": "Charizard breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
-      "imageUrl": "/pokemons/Fire red/Charizard.jpg",
+      "imageUrl": "/pokemons/Fire red/Charizard.png",
       "attributes": {
         "health": 78,
         "attack": 84,
@@ -45,7 +45,7 @@
     {
       "pokemonName": "Gyarados",
       "information": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times.",
-      "imageUrl": "/pokemons/Fire red/Gyarados.jpg",
+      "imageUrl": "/pokemons/Fire red/Gyarados.png",
       "attributes": {
         "health": 95,
         "attack": 125,

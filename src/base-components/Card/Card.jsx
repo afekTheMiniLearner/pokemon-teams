@@ -20,12 +20,7 @@ export default function Card({
     <MuiCard onClick={onClick}>
       <MuiCardActionArea>
         {imageUrl ? (
-          <MuiCardMedia
-            component="img"
-            height="150"
-            image={imageUrl}
-            alt={title}
-          />
+          <MuiCardMedia component="img" image={imageUrl} alt={title} />
         ) : null}
         <MuiCardContent>
           {title ? (
@@ -34,10 +29,7 @@ export default function Card({
             </MuiTypography>
           ) : null}
           {information ? (
-            <MuiTypography
-              variant="body2"
-              color="text.secondary"
-            >
+            <MuiTypography variant="body2" color="text.secondary">
               {information}
             </MuiTypography>
           ) : null}

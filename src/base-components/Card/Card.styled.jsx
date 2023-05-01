@@ -13,7 +13,10 @@ export const MuiCard = styled(Card)`
 
 export const MuiCardContent = styled(CardContent)``;
 
-export const MuiCardMedia = styled(CardMedia)``;
+export const MuiCardMedia = styled(CardMedia)`
+  height: 150px;
+  object-fit: contain;
+`;
 
 export const MuiCardActionArea = styled(CardActionArea)``;
 
