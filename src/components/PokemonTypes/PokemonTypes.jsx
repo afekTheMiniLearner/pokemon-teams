@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 import Avatar from "@mui/material/Avatar";
 import { getTypesProperties } from "@utils";
-import { Box } from "./PokemonTypes.styled";
+import { Box, Zoom } from "./PokemonTypes.styled";
 
 export default function PokemonTypes({ types, boxStyle }) {
   const typesProperties = getTypesProperties(types);
@@ -14,9 +14,11 @@ export default function PokemonTypes({ types, boxStyle }) {
         const { type, icon, style } = properties;
 
         return (
-          <Avatar key={i} alt={type} sx={style}>
-            {icon}
-          </Avatar>
+          <Zoom in>
+            <Avatar key={i} alt={type} sx={style}>
+              {icon}
+            </Avatar>
+          </Zoom>
         );
       })}
     </Box>
