@@ -6,7 +6,7 @@ import { MuiBox, MuiPokemonCard } from "./PokemonCardsBox.styled";
 export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
   return (
     <MuiBox {...props}>
-      {pokemonsTeam.map((pokemon, i) => {
+      {pokemonsTeam?.map((pokemon, i) => {
         const { pokemonName, information, attributes, types, imageUrl } =
           pokemon;
 
