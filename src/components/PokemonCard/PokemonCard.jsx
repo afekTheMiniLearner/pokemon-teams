@@ -21,15 +21,14 @@ export default function PokemonCard({
       information={information}
       imageUrl={imageUrl}
       onClick={() => setDataType("Advanced")}
-    >
-      <PokemonTypes types={types} />
-    </Card>
+    />
   ) : (
     <Card
       title={pokemonName}
       imageUrl={imageUrl}
       onClick={() => setDataType("Basic")}
     >
+      <PokemonTypes types={types} />
       <PokemonChips chipsContent={convertAttributesToLabels(attributes)} />
     </Card>
   );
