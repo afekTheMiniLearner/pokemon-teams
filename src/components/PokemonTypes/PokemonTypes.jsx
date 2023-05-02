@@ -19,7 +19,7 @@ export default function PokemonTypes({ typesIcons, isClickAble, boxStyle }) {
 }
 
 PokemonTypes.propTypes = {
-  typesIcons: PropTypes.arrayOf(PropTypes.shape({ icon: PropTypes.string })),
+  typesIcons: PropTypes.arrayOf(PropTypes.shape({ icon: PropTypes.node })),
   isClickAble: PropTypes.bool,
   boxStyle: PropTypes.shape({}),
 };

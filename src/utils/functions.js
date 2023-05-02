@@ -20,8 +20,10 @@ export function convertAttributesToLabels(attributes) {
 }
 
 export function getTypesIcons(types) {
-  const icons = types.map((type) => {
-    return { icon: TYPES_ICONS[type] };
+  const icons = {};
+  types.forEach((type) => {
+    icons[type] = TYPES_ICONS[type];
   });
+  
   return icons;
 }
