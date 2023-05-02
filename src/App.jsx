@@ -6,7 +6,7 @@ import { GAMES_LIST } from "@utils";
 import pokemonTeams from "../pokemons.json";
 
 function App() {
-  const [team, setTeam] = useState("Fire red");
+  const [team, setTeam] = useState(undefined);
 
   return (
     <div className="app-container">

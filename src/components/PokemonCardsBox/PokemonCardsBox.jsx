@@ -1,27 +1,32 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { MuiBox, MuiPokemonCard } from "./PokemonCardsBox.styled";
+import { LabeledLoader } from "@base-components";
+import { Box, MuiPokemonCard } from "./PokemonCardsBox.styled";
 
 export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
   return (
-    <MuiBox {...props}>
-      {pokemonsTeam?.map((pokemon, i) => {
-        const { pokemonName, information, attributes, types, imageUrl } =
-          pokemon;
+    <Box {...props}>
+      {pokemonsTeam.length ? (
+        pokemonsTeam?.map((pokemon, i) => {
+          const { pokemonName, information, attributes, types, imageUrl } =
+            pokemon;
 
-        return (
-          <MuiPokemonCard
-            key={i}
-            pokemonName={pokemonName}
-            information={information}
-            attributes={attributes}
-            imageUrl={imageUrl}
-            types={types}
-          />
-        );
-      })}
-    </MuiBox>
+          return (
+            <MuiPokemonCard
+              key={i}
+              pokemonName={pokemonName}
+              information={information}
+              attributes={attributes}
+              imageUrl={imageUrl}
+              types={types}
+            />
+          );
+        })
+      ) : (
+        <LabeledLoader label="Waiting for you to pick a game . . ." />
+      )}
+    </Box>
   );
 }
 
