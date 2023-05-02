@@ -14,6 +14,7 @@ export default function PokemonChips({
       chipsContent={chipsContent}
       isClickAble
       boxStyle={boxStyle}
+      size="small"
       {...props}
     />
   );
