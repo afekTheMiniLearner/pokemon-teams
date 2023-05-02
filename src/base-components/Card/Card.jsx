@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Grow } from "@mui/material";
 
 import {
   MuiCard,
@@ -17,26 +18,28 @@ export default function Card({
   children,
 }) {
   return (
-    <MuiCard onClick={onClick}>
-      <MuiCardActionArea>
-        {imageUrl ? (
-          <MuiCardMedia component="img" image={imageUrl} alt={title} />
-        ) : null}
-        <MuiCardContent>
-          {title ? (
-            <MuiTypography gutterBottom variant="h5" component="div">
-              {title}
-            </MuiTypography>
+    <Grow in>
+      <MuiCard onClick={onClick}>
+        <MuiCardActionArea>
+          {imageUrl ? (
+            <MuiCardMedia component="img" image={imageUrl} alt={title} />
           ) : null}
-          {information ? (
-            <MuiTypography variant="body6" color="text.secondary">
-              {information}
-            </MuiTypography>
-          ) : null}
-          {children}
-        </MuiCardContent>
-      </MuiCardActionArea>
-    </MuiCard>
+          <MuiCardContent>
+            {title ? (
+              <MuiTypography gutterBottom variant="h5" component="div">
+                {title}
+              </MuiTypography>
+            ) : null}
+            {information ? (
+              <MuiTypography variant="body6" color="text.secondary">
+                {information}
+              </MuiTypography>
+            ) : null}
+            {children}
+          </MuiCardContent>
+        </MuiCardActionArea>
+      </MuiCard>
+    </Grow>
   );
 }
 

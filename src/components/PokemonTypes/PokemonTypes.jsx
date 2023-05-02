@@ -14,8 +14,8 @@ export default function PokemonTypes({ types, boxStyle }) {
         const { type, icon, style } = properties;
 
         return (
-          <Zoom in>
-            <Avatar key={i} alt={type} sx={style}>
+          <Zoom key={i} in>
+            <Avatar alt={type} sx={style}>
               {icon}
             </Avatar>
           </Zoom>

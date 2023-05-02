@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Chip from "@base-components/Chip/Chip";
-import { MuiBox } from "./ChipsBox.styled";
+import { MuiBox, Grow } from "./ChipsBox.styled";
 
 export default function ChipsBox({
   chipsContent,
@@ -11,20 +11,22 @@ export default function ChipsBox({
   ...props
 }) {
   return (
-    <MuiBox sx={boxStyle}>
-      {chipsContent.map((data, i) => {
-        const { label, icon } = data;
-        return (
-          <Chip
-            key={i}
-            label={label || undefined}
-            icon={icon || undefined}
-            onClick={isClickAble ? () => {} : undefined}
-            {...props}
-          />
-        );
-      })}
-    </MuiBox>
+    <Grow in>
+      <MuiBox sx={boxStyle}>
+        {chipsContent.map((data, i) => {
+          const { label, icon } = data;
+          return (
+            <Chip
+              key={i}
+              label={label || undefined}
+              icon={icon || undefined}
+              onClick={isClickAble ? () => {} : undefined}
+              {...props}
+            />
+          );
+        })}
+      </MuiBox>
+    </Grow>
   );
 }
 
