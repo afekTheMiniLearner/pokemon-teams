@@ -1,17 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Fab from "@mui/material/Fab";
+import Avatar from "@mui/material/Avatar";
 import { Box } from "./PokemonTypes.styled";
 
 export default function PokemonTypes({ typesIcons, isClickAble, boxStyle }) {
   return (
     <Box sx={boxStyle}>
-      {Object.entries(typesIcons).map(([type, icon]) => {
+      {Object.entries(typesIcons).map(([type, icon], i) => {
         return (
-          <Fab disable={!isClickAble} aria-label={type}>
+          <Avatar key={i} alt={type}>
             {icon}
-          </Fab>
+          </Avatar>
         );
       })}
     </Box>
@@ -19,7 +19,7 @@ export default function PokemonTypes({ typesIcons, isClickAble, boxStyle }) {
 }
 
 PokemonTypes.propTypes = {
-  typesIcons: PropTypes.arrayOf(PropTypes.shape({ icon: PropTypes.node })),
+  typesIcons: PropTypes.shape({}),
   isClickAble: PropTypes.bool,
   boxStyle: PropTypes.shape({}),
 };
