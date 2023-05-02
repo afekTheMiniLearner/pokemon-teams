@@ -10,7 +10,7 @@ import {
   Diamond as DiamondIcon,
   Hub as PoisonIcon,
   Grass as GrassIcon,
-  Visibility as VisibilityIcon,
+  Visibility as PsychicIcon,
   Air as AirIcon,
   PestControl as BugIcon,
 } from "@mui/icons-material";
@@ -39,16 +39,16 @@ export const ATTRIBUTES_LIST = [
 ];
 
 export const TYPES_ICONS = {
-  normal: <StarIcon />,
-  fire: <FireIcon />,
-  poison: <PoisonIcon />,
-  grass: <GrassIcon />,
-  water: <WaterIcon />,
-  flying: <AirIcon />,
-  fighting: <FightIcon />,
-  psychic: <VisibilityIcon />,
-  bug: <BugIcon />,
-  electric: <ElectricIcon />,
-  steel: <SteelIcon />,
-  ground: <GroundIcon />,
+  normal: { icon: <StarIcon />, bgColor: "grey" },
+  fire: { icon: <FireIcon />, bgColor: "red" },
+  poison: { icon: <PoisonIcon />, bgColor: "purple" },
+  grass: { icon: <GrassIcon />, bgColor: "green" },
+  water: { icon: <WaterIcon />, bgColor: "blue" },
+  flying: { icon: <AirIcon />, bgColor: "lightblue" },
+  fighting: { icon: <FightIcon />, bgColor: "orange" },
+  psychic: { icon: <PsychicIcon />, bgColor: "pink" },
+  bug: { icon: <BugIcon />, bgColor: "olive" },
+  electric: { icon: <ElectricIcon />, bgColor: "yellow" },
+  steel: { icon: <SteelIcon />, bgColor: "silver" },
+  ground: { icon: <GroundIcon />, bgColor: "brown" },
 };

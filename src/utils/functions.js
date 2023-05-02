@@ -19,11 +19,9 @@ export function convertAttributesToLabels(attributes) {
   return labels;
 }
 
-export function getTypesIcons(types) {
-  const icons = {};
-  types.forEach((type) => {
-    icons[type] = TYPES_ICONS[type];
+export function getTypesProperties(types) {
+  return types.map((type) => {
+    const { icon, bgColor } = TYPES_ICONS[type];
+    return { type, icon, bgColor };
   });
-  
-  return icons;
 }

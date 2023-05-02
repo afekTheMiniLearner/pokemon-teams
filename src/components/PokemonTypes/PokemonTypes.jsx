@@ -2,14 +2,20 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Avatar from "@mui/material/Avatar";
+import { getTypesProperties } from "@utils";
 import { Box } from "./PokemonTypes.styled";
 
-export default function PokemonTypes({ typesIcons, isClickAble, boxStyle }) {
+export default function PokemonTypes({ types, boxStyle }) {
+  const typesProperties = getTypesProperties(types);
+
   return (
     <Box sx={boxStyle}>
-      {Object.entries(typesIcons).map(([type, icon], i) => {
+      {typesProperties.map((properties, i) => {
+        const { type, icon, bgColor } = properties;
+        console.log(properties);
+
         return (
-          <Avatar key={i} alt={type}>
+          <Avatar key={i} alt={type} sx={{ backgroundColor: bgColor }}>
             {icon}
           </Avatar>
         );
@@ -19,13 +25,11 @@ export default function PokemonTypes({ typesIcons, isClickAble, boxStyle }) {
 }
 
 PokemonTypes.propTypes = {
-  typesIcons: PropTypes.shape({}),
-  isClickAble: PropTypes.bool,
+  types: PropTypes.arrayOf(PropTypes.string),
   boxStyle: PropTypes.shape({}),
 };
 
 PokemonTypes.defaultProps = {
-  typesIcons: [],
-  isClickAble: false,
+  types: [],
   boxStyle: {},
 };
