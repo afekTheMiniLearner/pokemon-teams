@@ -19,7 +19,7 @@ export function convertAttributesToLabels(attributes) {
   return labels;
 }
 
-export function convertTypesToIcons(types) {
+export function getTypesIcons(types) {
   const icons = types.map((type) => {
     return { icon: TYPES_ICONS[type] };
   });

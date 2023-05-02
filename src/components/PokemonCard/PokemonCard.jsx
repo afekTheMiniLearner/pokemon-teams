@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { Card } from "@base-components";
-import { convertAttributesToLabels, convertTypesToIcons } from "@utils";
+import { convertAttributesToLabels, getTypesIcons } from "@utils";
 import PokemonChips from "@components/PokemonChips/PokemonChips";
 import PokemonTypes from "@components/PokemonTypes/PokemonTypes";
 
@@ -22,7 +22,7 @@ export default function PokemonCard({
       imageUrl={imageUrl}
       onClick={() => setDataType("Advanced")}
     >
-      <PokemonTypes types={convertTypesToIcons(types)} />
+      <PokemonTypes typesIcons={getTypesIcons(types)} />
     </Card>
   ) : (
     <Card

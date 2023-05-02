@@ -1,4 +1,5 @@
 import React from "react";
+import { GiMountainCave as GroundIcon } from "react-icons/gi";
 import {
   Eject as SteelIcon,
   LocalFireDepartment as FireIcon,
@@ -49,4 +50,5 @@ export const TYPES_ICONS = {
   bug: <BugIcon />,
   electric: <ElectricIcon />,
   steel: <SteelIcon />,
+  ground: <GroundIcon />,
 };

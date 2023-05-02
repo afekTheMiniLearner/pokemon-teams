@@ -1,32 +1,31 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { ChipsBox } from "@base-components";
+import Fab from "@mui/material/Fab";
+import { Box } from "./PokemonTypes.styled";
 
-export default function PokemonTypes({
-  types,
-  isClickAble,
-  boxStyle,
-  ...props
-}) {
+export default function PokemonTypes({ typesIcons, isClickAble, boxStyle }) {
   return (
-    <ChipsBox
-      chipsContent={types}
-      isClickAble
-      boxStyle={{ position: "absolute", right: 0, top: 0, margin: "2px" }}
-      {...props}
-    />
+    <Box sx={boxStyle}>
+      {Object.entries(typesIcons).map(([type, icon]) => {
+        return (
+          <Fab disable={!isClickAble} aria-label={type}>
+            {icon}
+          </Fab>
+        );
+      })}
+    </Box>
   );
 }
 
 PokemonTypes.propTypes = {
-  types: PropTypes.arrayOf(PropTypes.shape({ icon: PropTypes.string })),
+  typesIcons: PropTypes.arrayOf(PropTypes.shape({ icon: PropTypes.string })),
   isClickAble: PropTypes.bool,
   boxStyle: PropTypes.shape({}),
 };
 
 PokemonTypes.defaultProps = {
-  types: [],
+  typesIcons: [],
   isClickAble: false,
   boxStyle: {},
 };
