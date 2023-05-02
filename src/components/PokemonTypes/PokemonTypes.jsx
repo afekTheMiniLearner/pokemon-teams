@@ -11,11 +11,10 @@ export default function PokemonTypes({ types, boxStyle }) {
   return (
     <Box sx={boxStyle}>
       {typesProperties.map((properties, i) => {
-        const { type, icon, bgColor } = properties;
-        console.log(properties);
+        const { type, icon, style } = properties;
 
         return (
-          <Avatar key={i} alt={type} sx={{ backgroundColor: bgColor }}>
+          <Avatar key={i} alt={type} sx={style}>
             {icon}
           </Avatar>
         );

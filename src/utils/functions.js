@@ -21,7 +21,7 @@ export function convertAttributesToLabels(attributes) {
 
 export function getTypesProperties(types) {
   return types.map((type) => {
-    const { icon, bgColor } = TYPES_ICONS[type];
-    return { type, icon, bgColor };
+    const { icon, style } = TYPES_ICONS[type];
+    return { type, icon, style };
   });
 }

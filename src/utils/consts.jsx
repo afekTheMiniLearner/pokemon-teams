@@ -39,16 +39,16 @@ export const ATTRIBUTES_LIST = [
 ];
 
 export const TYPES_ICONS = {
-  normal: { icon: <StarIcon />, bgColor: "grey" },
-  fire: { icon: <FireIcon />, bgColor: "red" },
-  poison: { icon: <PoisonIcon />, bgColor: "purple" },
-  grass: { icon: <GrassIcon />, bgColor: "green" },
-  water: { icon: <WaterIcon />, bgColor: "blue" },
-  flying: { icon: <AirIcon />, bgColor: "lightblue" },
-  fighting: { icon: <FightIcon />, bgColor: "orange" },
-  psychic: { icon: <PsychicIcon />, bgColor: "pink" },
-  bug: { icon: <BugIcon />, bgColor: "olive" },
-  electric: { icon: <ElectricIcon />, bgColor: "yellow" },
-  steel: { icon: <SteelIcon />, bgColor: "silver" },
-  ground: { icon: <GroundIcon />, bgColor: "brown" },
+  normal: { icon: <StarIcon />, style: { backgroundColor: "grey" } },
+  fire: { icon: <FireIcon />, style: { backgroundColor: "red" } },
+  poison: { icon: <PoisonIcon />, style: { backgroundColor: "purple" } },
+  grass: { icon: <GrassIcon />, style: { backgroundColor: "green" } },
+  water: { icon: <WaterIcon />, style: { backgroundColor: "blue" } },
+  flying: { icon: <AirIcon />, style: { backgroundColor: "lightblue" } },
+  fighting: { icon: <FightIcon />, style: { backgroundColor: "orange" } },
+  psychic: { icon: <PsychicIcon />, style: { backgroundColor: "pink" } },
+  bug: { icon: <BugIcon />, style: { backgroundColor: "olive" } },
+  electric: { icon: <ElectricIcon />, style: { backgroundColor: "yellow" } },
+  steel: { icon: <SteelIcon />, style: { backgroundColor: "silver" } },
+  ground: { icon: <GroundIcon />, style: { backgroundColor: "brown" } },
 };
