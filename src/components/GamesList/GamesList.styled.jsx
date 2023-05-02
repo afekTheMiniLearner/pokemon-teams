@@ -1,18 +1,18 @@
 import { styled } from "@mui/material/styles";
-import List from "@mui/material/List";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
+import MuiList from "@mui/material/List";
+import MuiListItem from "@mui/material/ListItem";
+import MuiListItemButton from "@mui/material/ListItemButton";
+import MuiListItemText from "@mui/material/ListItemText";
+import MuiListItemIcon from "@mui/material/ListItemIcon";
 
-export const MuiList = styled(List)``;
+export const List = styled(MuiList)``;
 
-export const MuiListItem = styled(ListItem)``;
+export const ListItem = styled(MuiListItem)``;
 
-export const MuiListItemButton = styled(ListItemButton)``;
+export const ListItemButton = styled(MuiListItemButton)``;
 
-export const MuiListItemText = styled(ListItemText)``;
+export const ListItemText = styled(MuiListItemText)``;
 
-export const MuiListItemIcon = styled(ListItemIcon)`
+export const ListItemIcon = styled(MuiListItemIcon)`
   justify-content: center;
 `;

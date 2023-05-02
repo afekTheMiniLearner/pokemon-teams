@@ -2,7 +2,7 @@ import { styled } from "@mui/material/styles";
 
 import MuiBox from "@mui/material/Box";
 
-import PokemonCard from "../PokemonCard/PokemonCard";
+import MyPokemonCard from "../PokemonCard/PokemonCard";
 
 export const Box = styled(MuiBox)`
   display: flex;
@@ -12,4 +12,4 @@ export const Box = styled(MuiBox)`
   gap: 20px;
 `;
 
-export const MuiPokemonCard = styled(PokemonCard)``;
+export const PokemonCard = styled(MyPokemonCard)``;

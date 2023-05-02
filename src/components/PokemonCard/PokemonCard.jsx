@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { Card } from "@base-components";
-import { convertAttributesToLabels } from "@utils";
 import PokemonChips from "@components/PokemonChips/PokemonChips";
 import PokemonTypes from "@components/PokemonTypes/PokemonTypes";
+import { convertAttributesToLabels } from "@utils";
 
 export default function PokemonCard({
   pokemonName,

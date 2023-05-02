@@ -1,9 +1,9 @@
 import { styled } from "@mui/material/styles";
 
-import Box from "@mui/material/Box";
+import MuiBox from "@mui/material/Box";
 import MuiGrow from "@mui/material/Grow";
 
-export const MuiBox = styled(Box)`
+export const Box = styled(MuiBox)`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

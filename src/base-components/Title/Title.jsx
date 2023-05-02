@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Pokemon from "@src/assets/Pokemon-Hollow.ttf";
-import { MuiBox, MuiTypography } from "./Title.styled";
+import { Box, Typography } from "./Title.styled";
 
 export default function Title({ text }) {
   const theme = createTheme({
@@ -14,9 +14,9 @@ export default function Title({ text }) {
 
   return (
     <ThemeProvider theme={theme}>
-      <MuiBox>
-        <MuiTypography variant="h1">{text}</MuiTypography>
-      </MuiBox>
+      <Box>
+        <Typography variant="h1">{text}</Typography>
+      </Box>
     </ThemeProvider>
   );
 }

@@ -1,9 +1,10 @@
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import CardActionArea from "@mui/material/CardActionArea";
-import Typography from "@mui/material/Typography";
+import MuiCardContent from "@mui/material/CardContent";
+import MuiCardMedia from "@mui/material/CardMedia";
+import MuiCardActionArea from "@mui/material/CardActionArea";
+import MuiTypography from "@mui/material/Typography";
+import MuiGrow from "@mui/material/Grow";
 
 export const MuiCard = styled(Card)`
   height: 310px;
@@ -11,13 +12,15 @@ export const MuiCard = styled(Card)`
   margin: 0 20px;
 `;
 
-export const MuiCardContent = styled(CardContent)``;
+export const CardContent = styled(MuiCardContent)``;
 
-export const MuiCardMedia = styled(CardMedia)`
+export const CardMedia = styled(MuiCardMedia)`
   height: 150px;
   object-fit: contain;
 `;
 
-export const MuiCardActionArea = styled(CardActionArea)``;
+export const CardActionArea = styled(MuiCardActionArea)``;
 
-export const MuiTypography = styled(Typography)``;
+export const Typography = styled(MuiTypography)``;
+
+export const Grow = styled(MuiGrow)``;

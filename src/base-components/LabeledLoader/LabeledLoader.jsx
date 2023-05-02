@@ -1,8 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import CircularProgress from "@mui/material/CircularProgress";
 
-import { Box } from "./LabeledLoader.styled";
+import { Box, CircularProgress } from "./LabeledLoader.styled";
 
 export default function LabeledLoader({ label, ...props }) {
   return (

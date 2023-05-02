@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { LabeledLoader } from "@base-components";
-import { Box, MuiPokemonCard } from "./PokemonCardsBox.styled";
+import { Box, PokemonCard } from "./PokemonCardsBox.styled";
 
 export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
   return (
@@ -13,7 +13,7 @@ export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
             pokemon;
 
           return (
-            <MuiPokemonCard
+            <PokemonCard
               key={i}
               pokemonName={pokemonName}
               information={information}

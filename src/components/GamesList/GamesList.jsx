@@ -2,34 +2,34 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {
-  MuiList,
-  MuiListItem,
-  MuiListItemButton,
-  MuiListItemIcon,
-  MuiListItemText,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemIcon,
+  ListItemText,
 } from "./GamesList.styled";
 
 export default function GamesList({ items, children, onClick }) {
   return (
-    <MuiList>
+    <List>
       {items.map((item, i) => {
         const { name, icon, style } = item;
         return (
-          <MuiListItem
+          <ListItem
             key={i}
             onClick={() => onClick(name)}
             disablePadding
             sx={style}
           >
-            <MuiListItemButton>
-              <MuiListItemText primary={name} />
-              {icon ? <MuiListItemIcon>{icon}</MuiListItemIcon> : null}
+            <ListItemButton>
+              <ListItemText primary={name} />
+              {icon ? <ListItemIcon>{icon}</ListItemIcon> : null}
               {children}
-            </MuiListItemButton>
-          </MuiListItem>
+            </ListItemButton>
+          </ListItem>
         );
       })}
-    </MuiList>
+    </List>
   );
 }
 

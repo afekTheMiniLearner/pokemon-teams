@@ -1,13 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Grow } from "@mui/material";
 
 import {
   MuiCard,
-  MuiCardActionArea,
-  MuiCardContent,
-  MuiCardMedia,
-  MuiTypography,
+  CardActionArea,
+  CardContent,
+  CardMedia,
+  Typography,
+  Grow,
 } from "./Card.styled";
 
 export default function Card({
@@ -20,24 +20,24 @@ export default function Card({
   return (
     <Grow in>
       <MuiCard onClick={onClick}>
-        <MuiCardActionArea>
+        <CardActionArea>
           {imageUrl ? (
-            <MuiCardMedia component="img" image={imageUrl} alt={title} />
+            <CardMedia component="img" image={imageUrl} alt={title} />
           ) : null}
-          <MuiCardContent>
+          <CardContent>
             {title ? (
-              <MuiTypography gutterBottom variant="h5" component="div">
+              <Typography gutterBottom variant="h5" component="div">
                 {title}
-              </MuiTypography>
+              </Typography>
             ) : null}
             {information ? (
-              <MuiTypography variant="body6" color="text.secondary">
+              <Typography variant="body6" color="text.secondary">
                 {information}
-              </MuiTypography>
+              </Typography>
             ) : null}
             {children}
-          </MuiCardContent>
-        </MuiCardActionArea>
+          </CardContent>
+        </CardActionArea>
       </MuiCard>
     </Grow>
   );

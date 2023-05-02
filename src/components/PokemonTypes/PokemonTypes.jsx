@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import Avatar from "@mui/material/Avatar";
 import { getTypesProperties } from "@utils";
-import { Box, Zoom } from "./PokemonTypes.styled";
+import { Box, Zoom, Avatar } from "./PokemonTypes.styled";
 
 export default function PokemonTypes({ types, boxStyle }) {
   const typesProperties = getTypesProperties(types);
