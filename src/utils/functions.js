@@ -10,11 +10,11 @@ export function assertAttributes(attributes) {
   return assertedAttributes;
 }
 
-export function getAttributesArray(attributes) {
+export function convertAttributesToContent(attributes) {
   const assertedAttributes = assertAttributes(attributes);
 
-  const attributesArray = Object.entries(assertedAttributes).map(
-    ([key, value]) => `${key}:${value}`
-  );
-  return attributesArray;
+  const content = Object.entries(assertedAttributes).map(([key, value]) => {
+    return { label: `${key}:${value}` };
+  });
+  return content;
 }

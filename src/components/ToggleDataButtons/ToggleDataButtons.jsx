@@ -59,8 +59,7 @@ ToggleDataButtons.propTypes = {
   values: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
-      // eslint-disable-next-line react/forbid-prop-types
-      style: PropTypes.object,
+      style: PropTypes.shape({}),
       icon: PropTypes.node,
     })
   ),

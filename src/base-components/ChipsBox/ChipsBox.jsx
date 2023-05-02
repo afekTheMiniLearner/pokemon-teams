@@ -4,14 +4,21 @@ import PropTypes from "prop-types";
 import Chip from "@base-components/Chip/Chip";
 import { MuiBox } from "./ChipsBox.styled";
 
-export default function ChipsBox({ labels, isClickAble, boxStyle, ...props }) {
+export default function ChipsBox({
+  chipsContent,
+  isClickAble,
+  boxStyle,
+  ...props
+}) {
   return (
     <MuiBox sx={boxStyle}>
-      {labels.map((label, i) => {
+      {chipsContent.map((data, i) => {
+        const { label, icon } = data;
         return (
           <Chip
             key={i}
-            label={label}
+            label={label || undefined}
+            icon={icon || undefined}
             onClick={isClickAble ? () => {} : undefined}
             {...props}
           />
@@ -21,15 +28,18 @@ export default function ChipsBox({ labels, isClickAble, boxStyle, ...props }) {
   );
 }
 
+// chipsContent = [{ label: 'red', icon:'<cut />'}, { label: 'red', icon:'<cut />'}]
+
 ChipsBox.propTypes = {
-  labels: PropTypes.arrayOf(PropTypes.string),
+  chipsContent: PropTypes.arrayOf(
+    PropTypes.shape({ label: PropTypes.string, icon: PropTypes.node })
+  ),
   isClickAble: PropTypes.bool,
-  // eslint-disable-next-line react/forbid-prop-types
-  boxStyle: PropTypes.object,
+  boxStyle: PropTypes.shape({}),
 };
 
 ChipsBox.defaultProps = {
-  labels: [],
+  chipsContent: [],
   isClickAble: false,
   boxStyle: {},
 };

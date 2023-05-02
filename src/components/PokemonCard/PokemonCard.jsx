@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 import { Card } from "@base-components";
-import { getAttributesArray } from "@utils";
+import { convertAttributesToContent } from "@utils";
 import PokemonChips from "@components/PokemonChips/PokemonChips";
+import PokemonTypesChips from "@components/PokemonTypesChips/PokemonTypesChips";
 
 export default function PokemonCard({
   pokemonName,
@@ -21,10 +22,7 @@ export default function PokemonCard({
       imageUrl={imageUrl}
       onClick={() => setDataType("Advanced")}
     >
-      <PokemonChips
-        boxStyle={{ position: "absolute", right: 0, top: 0, margin: "2px" }}
-        chipContent={types}
-      />
+      <PokemonTypesChips types={types} />
     </Card>
   ) : (
     <Card
@@ -32,7 +30,7 @@ export default function PokemonCard({
       imageUrl={imageUrl}
       onClick={() => setDataType("Basic")}
     >
-      <PokemonChips chipContent={getAttributesArray(attributes)} isClickAble />
+      <PokemonChips chipsContent={convertAttributesToContent(attributes)} />
     </Card>
   );
 }

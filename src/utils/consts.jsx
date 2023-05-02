@@ -1,7 +1,7 @@
 import React from "react";
 import { BsFire } from "react-icons/bs";
 import { TbDiamondFilled } from "react-icons/tb";
-import {GrFireball} from "react-icons/Gr";
+import { GrFireball } from "react-icons/gr";
 
 export const TOGGLE_DATA_OPTIONS = ["Main", "Advanced"];
 
@@ -30,16 +30,15 @@ export const ATTRIBUTES_LIST = [
   "health",
 ];
 
-
 export const TYPES_ICONS = {
-  normal:    <GrFireball/>,
-  fire:     <BsFire/> ,
-  poison:    ,
-  grass:     ,
-  water:     ,
-  flying:    ,
-  fighting:  ,
-  psychic:   ,
-  ground:    ,
-  bug:       ,
-}
+  normal: <GrFireball />,
+  fire: <BsFire />,
+  // poison:    ,
+  // grass:     ,
+  // water:     ,
+  // flying:    ,
+  // fighting:  ,
+  // psychic:   ,
+  // ground:    ,
+  // bug:       ,
+};
