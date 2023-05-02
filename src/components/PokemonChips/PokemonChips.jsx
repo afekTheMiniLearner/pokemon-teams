@@ -11,7 +11,6 @@ export default function PokemonChips({
 }) {
   return (
     <ChipsBox
-      size="small"
       chipsContent={chipsContent}
       isClickAble
       boxStyle={boxStyle}

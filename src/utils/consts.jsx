@@ -1,24 +1,31 @@
 import React from "react";
-import { BsFire } from "react-icons/bs";
-import { TbDiamondFilled } from "react-icons/tb";
-import { GrFireball } from "react-icons/gr";
+import {
+  Eject as SteelIcon,
+  LocalFireDepartment as FireIcon,
+  WaterDrop as WaterIcon,
+  Stars as StarIcon,
+  FlashOn as ElectricIcon,
+  SportsMma as FightIcon,
+  Diamond as DiamondIcon,
+  Hub as PoisonIcon,
+  Grass as GrassIcon,
+  Visibility as VisibilityIcon,
+  Air as AirIcon,
+  PestControl as BugIcon,
+} from "@mui/icons-material";
 
 export const TOGGLE_DATA_OPTIONS = ["Main", "Advanced"];
 
-/* Each game on the list can have the following properties:
-- name: string that represents the name of the game.
-- style: object of additional style for the game.
-- icon: node of the desired icon to be displayed for the game. */
 export const GAMES_LIST = [
   {
     name: "Fire red",
     style: { color: "red !important" },
-    icon: <BsFire />,
+    icon: <FireIcon />,
   },
   {
     name: "Emerald",
     style: { color: "rgb(38, 154, 25) !important" },
-    icon: <TbDiamondFilled />,
+    icon: <DiamondIcon />,
   },
 ];
 
@@ -31,14 +38,15 @@ export const ATTRIBUTES_LIST = [
 ];
 
 export const TYPES_ICONS = {
-  normal: <GrFireball />,
-  fire: <BsFire />,
-  // poison:    ,
-  // grass:     ,
-  // water:     ,
-  // flying:    ,
-  // fighting:  ,
-  // psychic:   ,
-  // ground:    ,
-  // bug:       ,
+  normal: <StarIcon />,
+  fire: <FireIcon />,
+  poison: <PoisonIcon />,
+  grass: <GrassIcon />,
+  water: <WaterIcon />,
+  flying: <AirIcon />,
+  fighting: <FightIcon />,
+  psychic: <VisibilityIcon />,
+  bug: <BugIcon />,
+  electric: <ElectricIcon />,
+  steel: <SteelIcon />,
 };

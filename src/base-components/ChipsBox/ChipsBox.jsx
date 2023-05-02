@@ -14,6 +14,7 @@ export default function ChipsBox({
     <MuiBox sx={boxStyle}>
       {chipsContent.map((data, i) => {
         const { label, icon } = data;
+        console.log(JSON.stringify(data));
         return (
           <Chip
             key={i}

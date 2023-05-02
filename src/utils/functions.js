@@ -1,4 +1,4 @@
-import { ATTRIBUTES_LIST } from "./consts";
+import { ATTRIBUTES_LIST, TYPES_ICONS } from "./consts";
 
 export function assertAttributes(attributes) {
   const assertedAttributes = { ...attributes };
@@ -10,11 +10,18 @@ export function assertAttributes(attributes) {
   return assertedAttributes;
 }
 
-export function convertAttributesToContent(attributes) {
+export function convertAttributesToLabels(attributes) {
   const assertedAttributes = assertAttributes(attributes);
 
-  const content = Object.entries(assertedAttributes).map(([key, value]) => {
+  const labels = Object.entries(assertedAttributes).map(([key, value]) => {
     return { label: `${key}:${value}` };
   });
-  return content;
+  return labels;
+}
+
+export function convertTypesToIcons(types) {
+  const icons = types.map((type) => {
+    return { icon: TYPES_ICONS[type] };
+  });
+  return icons;
 }

@@ -1,10 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import PokemonChips from "@components/PokemonChips/PokemonChips";
-import { TYPES_ICONS } from "@utils";
+import { ChipsBox } from "@base-components";
 
-export default function PokemonTypesChips({
+export default function PokemonTypes({
   types,
   isClickAble,
   boxStyle,
@@ -12,8 +11,7 @@ export default function PokemonTypesChips({
 }) {
   return (
     <ChipsBox
-      size="small"
-      chipsContent={}
+      chipsContent={types}
       isClickAble
       boxStyle={{ position: "absolute", right: 0, top: 0, margin: "2px" }}
       {...props}
@@ -21,13 +19,13 @@ export default function PokemonTypesChips({
   );
 }
 
-PokemonTypesChips.propTypes = {
-  types: PropTypes.arrayOf(PropTypes.string),
+PokemonTypes.propTypes = {
+  types: PropTypes.arrayOf(PropTypes.shape({ icon: PropTypes.string })),
   isClickAble: PropTypes.bool,
   boxStyle: PropTypes.shape({}),
 };
 
-PokemonTypesChips.defaultProps = {
+PokemonTypes.defaultProps = {
   types: [],
   isClickAble: false,
   boxStyle: {},
