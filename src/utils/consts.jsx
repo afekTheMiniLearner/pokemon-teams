@@ -31,11 +31,11 @@ export const GAMES_BUTTONS = [
 ];
 
 export const ATTRIBUTES_LIST = [
-  "attack",
-  "defense",
-  "spAttack",
-  "spDefense",
-  "health",
+  "Attack",
+  "Defense",
+  "SpAtk",
+  "SpDef",
+  "Health",
 ];
 
 export const TYPES_ICONS = {

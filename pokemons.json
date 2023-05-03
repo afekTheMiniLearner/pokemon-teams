@@ -5,12 +5,12 @@
       "information": "Charizard breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
       "imageUrl": "/pokemons/Fire red/Charizard.png",
       "attributes": {
-        "health": 78,
-        "attack": 84,
-        "spAttack": 109,
-        "speed": 100,
-        "defense": 78,
-        "spDefense": 85
+        "Health": 78,
+        "Attack": 84,
+        "SpAtk": 109,
+        "Speed": 100,
+        "Defense": 78,
+        "SpDef": 85
       },
       "types": ["fire", "flying"]
     },
@@ -19,26 +19,26 @@
       "information": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
       "imageUrl": "/pokemons/Fire red/Vileplume.png",
       "attributes": {
-        "health": 75,
-        "attack": 80,
-        "spAttack": 110,
-        "speed": 50,
-        "defense": 85,
-        "spDefense": 90
+        "Health": 75,
+        "Attack": 80,
+        "SpAtk": 110,
+        "Speed": 50,
+        "Defense": 85,
+        "SpDef": 90
       },
       "types": ["grass", "poison"]
     },
     {
       "pokemonName": "Pidgeot",
-      "information": "It spreads its gorgeous wings widely to intimidate enemies. It races through the skies at Mach-2 speed.",
+      "information": "It spreads its gorgeous wings widely to intimidate enemies. It races through the skies at Mach-2 Speed.",
       "imageUrl": "/pokemons/Fire red/Pidgeot.png",
       "attributes": {
-        "health": 83,
-        "attack": 80,
-        "spAttack": 70,
-        "speed": 101,
-        "defense": 75,
-        "spDefense": 70
+        "Health": 83,
+        "Attack": 80,
+        "SpAtk": 70,
+        "Speed": 101,
+        "Defense": 75,
+        "SpDef": 70
       },
       "types": ["normal", "flying"]
     },
@@ -47,12 +47,12 @@
       "information": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times.",
       "imageUrl": "/pokemons/Fire red/Gyarados.png",
       "attributes": {
-        "health": 95,
-        "attack": 125,
-        "spAttack": 60,
-        "speed": 81,
-        "defense": 79,
-        "spDefense": 100
+        "Health": 95,
+        "Attack": 125,
+        "SpAtk": 60,
+        "Speed": 81,
+        "Defense": 79,
+        "SpDef": 100
       },
       "types": ["water", "flying"]
     },
@@ -61,12 +61,12 @@
       "information": "When kicking, the sole of its foot turns as hard as a diamond on impact and destroys its enemy.",
       "imageUrl": "/pokemons/Fire red/Hitmonlee.png",
       "attributes": {
-        "health": 50,
-        "attack": 120,
-        "spAttack": 35,
-        "speed": 87,
-        "defense": 53,
-        "spDefense": 110
+        "Health": 50,
+        "Attack": 120,
+        "SpAtk": 35,
+        "Speed": 87,
+        "Defense": 53,
+        "SpDef": 110
       },
       "types": ["fighting"]
     }
@@ -77,12 +77,12 @@
       "information": "It agilely leaps about the jungle and uses the sharp leaves on its arms to strike its prey.",
       "imageUrl": "/pokemons/Emerald/Sceptile.png",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "spAttack": 105,
-        "speed": 120,
-        "defense": 65,
-        "spDefense": 85
+        "Health": 70,
+        "Attack": 85,
+        "SpAtk": 105,
+        "Speed": 120,
+        "Defense": 65,
+        "SpDef": 85
       },
       "types": ["grass"]
     },
@@ -91,12 +91,12 @@
       "information": "The world's laziest Pokémon. It moves to another spot when there's no food left within its reach.",
       "imageUrl": "/pokemons/Emerald/Slaking.png",
       "attributes": {
-        "health": 70,
-        "attack": 85,
-        "spAttack": 105,
-        "speed": 120,
-        "defense": 65,
-        "spDefense": 85
+        "Health": 70,
+        "Attack": 85,
+        "SpAtk": 105,
+        "Speed": 120,
+        "Defense": 65,
+        "SpDef": 85
       },
       "types": ["normal"]
     },
@@ -105,12 +105,12 @@
       "information": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
       "imageUrl": "/pokemons/Emerald/Starmie.png",
       "attributes": {
-        "health": 60,
-        "attack": 75,
-        "spAttack": 100,
-        "speed": 115,
-        "defense": 85,
-        "spDefense": 85
+        "Health": 60,
+        "Attack": 75,
+        "SpAtk": 100,
+        "Speed": 115,
+        "Defense": 85,
+        "SpDef": 85
       },
       "types": ["water", "psychic"]
     },
@@ -119,26 +119,26 @@
       "information": "An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.",
       "imageUrl": "/pokemons/Emerald/Claydol.png",
       "attributes": {
-        "health": 60,
-        "attack": 70,
-        "spAttack": 70,
-        "speed": 75,
-        "defense": 105,
-        "spDefense": 120
+        "Health": 60,
+        "Attack": 70,
+        "SpAtk": 70,
+        "Speed": 75,
+        "Defense": 105,
+        "SpDef": 120
       },
       "types": ["ground", "psychic"]
     },
     {
       "pokemonName": "Pinsir",
-      "information": "Swings its long antlers wildly to attack. During cold periods, it hides deep in forests",
+      "information": "Swings its long antlers wildly to Attack. During cold periods, it hides deep in forests",
       "imageUrl": "/pokemons/Emerald/Pinsir.png",
       "attributes": {
-        "health": 65,
-        "attack": 125,
-        "spAttack": 55,
-        "speed": 85,
-        "defense": 100,
-        "spDefense": 70
+        "Health": 65,
+        "Attack": 125,
+        "SpAtk": 55,
+        "Speed": 85,
+        "Defense": 100,
+        "SpDef": 70
       },
       "types": ["bug"]
     }
