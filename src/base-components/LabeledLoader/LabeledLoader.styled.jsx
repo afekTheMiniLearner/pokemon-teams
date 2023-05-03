@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles";
 import MuiCircularProgress from "@mui/material/CircularProgress";
 import MuiBox from "@mui/material/Box";
+import MuiGrow from "@mui/material/Grow";
 
 export const Box = styled(MuiBox)`
   display: flex;
@@ -14,3 +15,7 @@ export const Box = styled(MuiBox)`
 `;
 
 export const CircularProgress = styled(MuiCircularProgress)``;
+
+export const Grow = styled(MuiGrow)`
+  transition-delay: 200ms;
+`;
