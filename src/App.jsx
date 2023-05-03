@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Grow from "@mui/material/Grow";
 
 import { PokemonCardsBox, ToggleDataButtons } from "@components";
 import { Title } from "@base-components";
