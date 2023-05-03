@@ -8,6 +8,7 @@ import {
   CardMedia,
   Typography,
   Grow,
+  Box,
 } from "./Card.styled";
 
 export default function Card({
@@ -31,11 +32,13 @@ export default function Card({
               </Typography>
             ) : null}
             {information ? (
-              <Typography variant="body6" color="text.secondary">
-                {information}
-              </Typography>
+              <Box>
+                <Typography variant="body6" color="text.secondary">
+                  {information}
+                </Typography>{" "}
+              </Box>
             ) : null}
-            {children}
+            {children ? <Box>{children}</Box> : null}
           </CardContent>
         </CardActionArea>
       </MuiCard>
