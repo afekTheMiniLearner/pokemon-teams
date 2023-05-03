@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import Chip from "@base-components/Chip/Chip";
-import { Box, Grow } from "./ChipsBox.styled";
+import { Grid, Zoom } from "./ChipsBox.styled";
 
 export default function ChipsBox({
   chipsContent,
@@ -11,22 +11,23 @@ export default function ChipsBox({
   ...props
 }) {
   return (
-    <Grow in>
-      <Box sx={boxStyle}>
+    <Zoom in>
+      <Grid container spacing={1} sx={boxStyle}>
         {chipsContent.map((data, i) => {
           const { label, icon } = data;
           return (
-            <Chip
-              key={i}
-              label={label || undefined}
-              icon={icon || undefined}
-              onClick={isClickAble ? () => {} : undefined}
-              {...props}
-            />
+            <Grid key={i} item xs={4}>
+              <Chip
+                label={label || undefined}
+                icon={icon || undefined}
+                onClick={isClickAble ? () => {} : undefined}
+                {...props}
+              />
+            </Grid>
           );
         })}
-      </Box>
-    </Grow>
+      </Grid>
+    </Zoom>
   );
 }
 
