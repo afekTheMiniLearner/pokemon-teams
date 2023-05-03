@@ -17,14 +17,14 @@ import {
 
 export const TOGGLE_DATA_OPTIONS = ["Main", "Advanced"];
 
-export const GAMES_LIST = [
+export const GAMES_BUTTONS = [
   {
-    name: "Fire red",
+    label: "Fire red",
     style: { color: "red !important" },
     icon: <FireIcon />,
   },
   {
-    name: "Emerald",
+    label: "Emerald",
     style: { color: "rgb(38, 154, 25) !important" },
     icon: <DiamondIcon />,
   },

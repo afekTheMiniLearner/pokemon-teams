@@ -7,13 +7,13 @@ export default function ToggleDataButtons({
   size,
   color,
   currentValue,
-  setValue,
-  values,
+  onChange,
+  buttonsProperties,
   orientation,
   ...props
 }) {
   const onChangeHandler = (_event, newDataType) => {
-    setValue(newDataType);
+    onChange(newDataType);
   };
 
   return (
@@ -24,14 +24,13 @@ export default function ToggleDataButtons({
       orientation={orientation}
       exclusive
       onChange={onChangeHandler}
-      aria-label="Platform"
       {...props}
     >
-      {values?.map((value, i) => {
-        const { name, style, icon } = value;
+      {buttonsProperties?.map((value, i) => {
+        const { label, style, icon } = value;
         return (
-          <ToggleButton key={i} value={name} sx={style}>
-            {name}
+          <ToggleButton key={i} value={label} sx={style}>
+            {label}
             {icon}
           </ToggleButton>
         );
@@ -52,10 +51,10 @@ ToggleDataButtons.propTypes = {
     "text",
   ]),
   currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  setValue: PropTypes.func,
-  values: PropTypes.arrayOf(
+  onChange: PropTypes.func,
+  buttonsProperties: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string,
+      label: PropTypes.string,
       style: PropTypes.shape({}),
       icon: PropTypes.node,
     })
@@ -66,7 +65,7 @@ ToggleDataButtons.defaultProps = {
   size: "small",
   color: undefined,
   currentValue: undefined,
-  setValue: undefined,
-  values: [],
+  onChange: undefined,
+  buttonsProperties: [],
   orientation: "vertical",
 };
