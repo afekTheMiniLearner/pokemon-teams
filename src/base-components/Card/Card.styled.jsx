@@ -18,6 +18,24 @@ export const MuiCard = styled(Card)`
     width: 300px;
     margin: 0 10px;
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 220px;
+    width: 260px;
+    margin: 0 5px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 190px;
+    width: 220px;
+    margin: 0;
+  }
+
+  @media (max-width: 480px) {
+    height: 190px;
+    width: 220px;
+    margin: 0;
+  }
 `;
 
 export const CardContent = styled(MuiCardContent)``;
@@ -28,6 +46,18 @@ export const CardMedia = styled(MuiCardMedia)`
 
   @media (min-width: 1025px) and (max-width: 1280px) {
     height: 120px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    height: 100px;
+  }
+
+  @media (min-width: 481px) and (max-width: 767px) {
+    height: 90px;
+  }
+
+  @media (max-width: 480px) {
+    height: 80px;
   }
 `;
 

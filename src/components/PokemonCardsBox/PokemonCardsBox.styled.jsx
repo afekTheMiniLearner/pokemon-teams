@@ -10,6 +10,10 @@ export const Box = styled(MuiBox)`
   flex-wrap: wrap;
   margin-top: 150px;
   gap: 20px;
+
+  @media (max-width: 480px) {
+    margin-top: 700px;
+  }
 `;
 
 export const PokemonCard = styled(MyPokemonCard)``;

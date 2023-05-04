@@ -1,33 +1,27 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { LabeledLoader } from "@base-components";
 import { Box, PokemonCard } from "./PokemonCardsBox.styled";
 
 export default function PokemonCardsBox({ pokemonsTeam, ...props }) {
-  return (
+  return pokemonsTeam.length ? (
     <Box {...props}>
-      {pokemonsTeam.length ? (
-        pokemonsTeam?.map((pokemon, i) => {
-          const { pokemonName, information, attributes, types, imageUrl } =
-            pokemon;
-
-          return (
-            <PokemonCard
-              key={i}
-              pokemonName={pokemonName}
-              information={information}
-              attributes={attributes}
-              imageUrl={imageUrl}
-              types={types}
-            />
-          );
-        })
-      ) : (
-        <LabeledLoader label="Waiting for you to pick a game . . ." />
-      )}
+      {pokemonsTeam.map((pokemon, i) => {
+        const { pokemonName, information, attributes, types, imageUrl } =
+          pokemon;
+        return (
+          <PokemonCard
+            key={i}
+            pokemonName={pokemonName}
+            information={information}
+            attributes={attributes}
+            imageUrl={imageUrl}
+            types={types}
+          />
+        );
+      })}
     </Box>
-  );
+  ) : null;
 }
 
 PokemonCardsBox.propTypes = {
