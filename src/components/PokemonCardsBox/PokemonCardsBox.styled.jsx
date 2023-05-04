@@ -12,7 +12,9 @@ export const Box = styled(MuiBox)`
   gap: 20px;
 
   @media (max-width: 480px) {
-    margin-top: 700px;
+    position: absolute;
+    right: 10px;
+    top: 110px;
   }
 `;
 
