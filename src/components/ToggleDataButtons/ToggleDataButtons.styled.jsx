@@ -9,6 +9,14 @@ export const ToggleButtonGroup = styled(MuiToggleButtonGroup)`
   z-index: 1;
   margin-top: 100px;
   margin-right: 100px;
+
+  @media (min-width: 1280px) and (max-width: 1470px) {
+    margin-right: 60px;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    margin-right: 30px;
+  }
 `;
 
 export const ToggleButton = styled(MuiToggleButton)``;

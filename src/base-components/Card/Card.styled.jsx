@@ -12,6 +12,12 @@ export const MuiCard = styled(Card)`
   height: 310px;
   width: 370px;
   margin: 0 20px;
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    height: 260px;
+    width: 300px;
+    margin: 0 10px;
+  }
 `;
 
 export const CardContent = styled(MuiCardContent)``;
@@ -19,6 +25,10 @@ export const CardContent = styled(MuiCardContent)``;
 export const CardMedia = styled(MuiCardMedia)`
   height: 150px;
   object-fit: contain;
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    height: 120px;
+  }
 `;
 
 export const CardActionArea = styled(MuiCardActionArea)``;
