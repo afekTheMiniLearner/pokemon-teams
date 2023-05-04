@@ -6,7 +6,8 @@ import {
   CardActionArea,
   CardContent,
   CardMedia,
-  Typography,
+  TitleTypography,
+  ContentTypography,
   Grow,
   Box,
 } from "./Card.styled";
@@ -27,15 +28,15 @@ export default function Card({
           ) : null}
           <CardContent>
             {title ? (
-              <Typography gutterBottom variant="h5" component="div">
+              <TitleTypography gutterBottom variant="h5" component="div">
                 {title}
-              </Typography>
+              </TitleTypography>
             ) : null}
             {information ? (
               <Box>
-                <Typography variant="body6" color="text.secondary">
+                <ContentTypography variant="body6" color="text.secondary">
                   {information}
-                </Typography>{" "}
+                </ContentTypography>
               </Box>
             ) : null}
             {children ? <Box>{children}</Box> : null}

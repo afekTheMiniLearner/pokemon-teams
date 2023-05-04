@@ -63,7 +63,33 @@ export const CardMedia = styled(MuiCardMedia)`
 
 export const CardActionArea = styled(MuiCardActionArea)``;
 
-export const Typography = styled(MuiTypography)``;
+export const TitleTypography = styled(MuiTypography)`
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 1.2em;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 1.1em;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 1em;
+  }
+`;
+
+export const ContentTypography = styled(MuiTypography)`
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    font-size: 0.8em;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 0.7em;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 0.6em;
+  }
+`;
 
 export const Grow = styled(MuiGrow)``;
 
