@@ -30,13 +30,7 @@ export const GAMES_BUTTONS = [
   },
 ];
 
-export const ATTRIBUTES_LIST = [
-  "Attack",
-  "Defense",
-  "SpAtk",
-  "SpDef",
-  "Health",
-];
+export const ATTRIBUTES_LIST = ["Atk", "Def", "SpAtk", "SpDef", "Health"];
 
 export const TYPES_ICONS = {
   normal: { icon: <StarIcon />, style: { backgroundColor: "grey" } },

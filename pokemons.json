@@ -6,10 +6,10 @@
       "imageUrl": "/pokemons/Fire red/Charizard.png",
       "attributes": {
         "Health": 78,
-        "Attack": 84,
+        "Atk": 84,
         "SpAtk": 109,
         "Speed": 100,
-        "Defense": 78,
+        "Def": 78,
         "SpDef": 85
       },
       "types": ["fire", "flying"]
@@ -20,10 +20,10 @@
       "imageUrl": "/pokemons/Fire red/Vileplume.png",
       "attributes": {
         "Health": 75,
-        "Attack": 80,
+        "Atk": 80,
         "SpAtk": 110,
         "Speed": 50,
-        "Defense": 85,
+        "Def": 85,
         "SpDef": 90
       },
       "types": ["grass", "poison"]
@@ -34,10 +34,10 @@
       "imageUrl": "/pokemons/Fire red/Pidgeot.png",
       "attributes": {
         "Health": 83,
-        "Attack": 80,
+        "Atk": 80,
         "SpAtk": 70,
         "Speed": 101,
-        "Defense": 75,
+        "Def": 75,
         "SpDef": 70
       },
       "types": ["normal", "flying"]
@@ -48,10 +48,10 @@
       "imageUrl": "/pokemons/Fire red/Gyarados.png",
       "attributes": {
         "Health": 95,
-        "Attack": 125,
+        "Atk": 125,
         "SpAtk": 60,
         "Speed": 81,
-        "Defense": 79,
+        "Def": 79,
         "SpDef": 100
       },
       "types": ["water", "flying"]
@@ -62,10 +62,10 @@
       "imageUrl": "/pokemons/Fire red/Hitmonlee.png",
       "attributes": {
         "Health": 50,
-        "Attack": 120,
+        "Atk": 120,
         "SpAtk": 35,
         "Speed": 87,
-        "Defense": 53,
+        "Def": 53,
         "SpDef": 110
       },
       "types": ["fighting"]
@@ -78,10 +78,10 @@
       "imageUrl": "/pokemons/Emerald/Sceptile.png",
       "attributes": {
         "Health": 70,
-        "Attack": 85,
+        "Atk": 85,
         "SpAtk": 105,
         "Speed": 120,
-        "Defense": 65,
+        "Def": 65,
         "SpDef": 85
       },
       "types": ["grass"]
@@ -92,10 +92,10 @@
       "imageUrl": "/pokemons/Emerald/Slaking.png",
       "attributes": {
         "Health": 70,
-        "Attack": 85,
+        "Atk": 85,
         "SpAtk": 105,
         "Speed": 120,
-        "Defense": 65,
+        "Def": 65,
         "SpDef": 85
       },
       "types": ["normal"]
@@ -106,10 +106,10 @@
       "imageUrl": "/pokemons/Emerald/Starmie.png",
       "attributes": {
         "Health": 60,
-        "Attack": 75,
+        "Atk": 75,
         "SpAtk": 100,
         "Speed": 115,
-        "Defense": 85,
+        "Def": 85,
         "SpDef": 85
       },
       "types": ["water", "psychic"]
@@ -120,24 +120,24 @@
       "imageUrl": "/pokemons/Emerald/Claydol.png",
       "attributes": {
         "Health": 60,
-        "Attack": 70,
+        "Atk": 70,
         "SpAtk": 70,
         "Speed": 75,
-        "Defense": 105,
+        "Def": 105,
         "SpDef": 120
       },
       "types": ["ground", "psychic"]
     },
     {
       "pokemonName": "Pinsir",
-      "information": "Swings its long antlers wildly to Attack. During cold periods, it hides deep in forests",
+      "information": "Swings its long antlers wildly to Atk. During cold periods, it hides deep in forests",
       "imageUrl": "/pokemons/Emerald/Pinsir.png",
       "attributes": {
         "Health": 65,
-        "Attack": 125,
+        "Atk": 125,
         "SpAtk": 55,
         "Speed": 85,
-        "Defense": 100,
+        "Def": 100,
         "SpDef": 70
       },
       "types": ["bug"]

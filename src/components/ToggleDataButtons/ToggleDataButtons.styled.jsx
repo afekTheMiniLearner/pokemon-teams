@@ -53,6 +53,6 @@ export const ToggleButton = styled(MuiToggleButton)`
     font-size: 10px;
     font-weight: bolder;
     height: 25px;
-    width: 90px;
+    width: 95px;
   }
 `;

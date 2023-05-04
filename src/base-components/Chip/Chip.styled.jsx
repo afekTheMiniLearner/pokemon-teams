@@ -9,7 +9,7 @@ export const MuiChip = styled(Chip)`
 
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-weight: bolder;
-    font-size: 0.8em;
+    font-size: 0.75em;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -19,11 +19,11 @@ export const MuiChip = styled(Chip)`
 
   @media (min-width: 481px) and (max-width: 767px) {
     font-weight: bolder;
-    font-size: 0.54em;
+    font-size: 0.5em;
   }
 
   @media (max-width: 480px) {
     font-weight: bolder;
-    font-size: 0.49em;
+    font-size: 0.48em;
   }
 `;

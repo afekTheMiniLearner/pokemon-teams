@@ -39,8 +39,8 @@ PokemonCard.propTypes = {
   information: PropTypes.string,
   imageUrl: PropTypes.string,
   attributes: PropTypes.shape({
-    Attack: PropTypes.number,
-    Defense: PropTypes.number,
+    Atk: PropTypes.number,
+    Def: PropTypes.number,
     SpAtk: PropTypes.number,
     SpDef: PropTypes.number,
     Health: PropTypes.number,

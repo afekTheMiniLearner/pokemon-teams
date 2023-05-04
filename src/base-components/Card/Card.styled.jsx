@@ -25,15 +25,15 @@ export const MuiCard = styled(Card)`
     margin: 0 5px;
   }
 
-  @media (min-width: 481px) and (max-width: 767px) {
+  @media (min-width: 510px) and (max-width: 767px) {
     height: 230px;
-    width: 230px;
+    width: 240px;
     margin: 0;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 509px) {
     height: 210px;
-    width: 220px;
+    width: 230px;
     margin: 0;
   }
 `;
