@@ -20,19 +20,19 @@ export const MuiCard = styled(Card)`
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
-    height: 220px;
+    height: 230px;
     width: 260px;
     margin: 0 5px;
   }
 
   @media (min-width: 481px) and (max-width: 767px) {
-    height: 190px;
-    width: 220px;
+    height: 230px;
+    width: 230px;
     margin: 0;
   }
 
   @media (max-width: 480px) {
-    height: 190px;
+    height: 210px;
     width: 220px;
     margin: 0;
   }
