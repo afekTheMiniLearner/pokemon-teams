@@ -24,7 +24,7 @@
     "build": "webpack --config webpack.config.js",
     "lint": "eslint --ext .jsx --ext .js .",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
