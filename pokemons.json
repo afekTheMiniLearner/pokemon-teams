@@ -3,7 +3,7 @@
     {
       "pokemonName": "Charizard",
       "information": "Charizard breathes fire of such great heat that it melts anything. However, it never turns its fiery breath on any opponent weaker than itself.",
-      "imageUrl": "/pokemons/Fire red/Charizard.png",
+      "imageUrl": "pokemons/Fire red/Charizard.png",
       "attributes": {
         "Health": 78,
         "Atk": 84,
@@ -17,7 +17,7 @@
     {
       "pokemonName": "Vileplume",
       "information": "The larger its petals, the more toxic pollen it contains. Its big head is heavy and hard to hold up.",
-      "imageUrl": "/pokemons/Fire red/Vileplume.png",
+      "imageUrl": "pokemons/Fire red/Vileplume.png",
       "attributes": {
         "Health": 75,
         "Atk": 80,
@@ -31,7 +31,7 @@
     {
       "pokemonName": "Pidgeot",
       "information": "It spreads its gorgeous wings widely to intimidate enemies. It races through the skies at Mach-2 Speed.",
-      "imageUrl": "/pokemons/Fire red/Pidgeot.png",
+      "imageUrl": "pokemons/Fire red/Pidgeot.png",
       "attributes": {
         "Health": 83,
         "Atk": 80,
@@ -45,7 +45,7 @@
     {
       "pokemonName": "Gyarados",
       "information": "Brutally vicious and enormously destructive. Known for totally destroying cities in ancient times.",
-      "imageUrl": "/pokemons/Fire red/Gyarados.png",
+      "imageUrl": "pokemons/Fire red/Gyarados.png",
       "attributes": {
         "Health": 95,
         "Atk": 125,
@@ -59,7 +59,7 @@
     {
       "pokemonName": "Hitmonlee",
       "information": "When kicking, the sole of its foot turns as hard as a diamond on impact and destroys its enemy.",
-      "imageUrl": "/pokemons/Fire red/Hitmonlee.png",
+      "imageUrl": "pokemons/Fire red/Hitmonlee.png",
       "attributes": {
         "Health": 50,
         "Atk": 120,
@@ -75,7 +75,7 @@
     {
       "pokemonName": "Sceptile",
       "information": "It agilely leaps about the jungle and uses the sharp leaves on its arms to strike its prey.",
-      "imageUrl": "/pokemons/Emerald/Sceptile.png",
+      "imageUrl": "pokemons/Emerald/Sceptile.png",
       "attributes": {
         "Health": 70,
         "Atk": 85,
@@ -89,7 +89,7 @@
     {
       "pokemonName": "Slaking",
       "information": "The world's laziest Pokémon. It moves to another spot when there's no food left within its reach.",
-      "imageUrl": "/pokemons/Emerald/Slaking.png",
+      "imageUrl": "pokemons/Emerald/Slaking.png",
       "attributes": {
         "Health": 70,
         "Atk": 85,
@@ -103,7 +103,7 @@
     {
       "pokemonName": "Starmie",
       "information": "Its central core glows with the seven colors of the rainbow. Some people value the core as a gem.",
-      "imageUrl": "/pokemons/Emerald/Starmie.png",
+      "imageUrl": "pokemons/Emerald/Starmie.png",
       "attributes": {
         "Health": 60,
         "Atk": 75,
@@ -117,7 +117,7 @@
     {
       "pokemonName": "Claydol",
       "information": "An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.",
-      "imageUrl": "/pokemons/Emerald/Claydol.png",
+      "imageUrl": "pokemons/Emerald/Claydol.png",
       "attributes": {
         "Health": 60,
         "Atk": 70,
@@ -131,7 +131,7 @@
     {
       "pokemonName": "Pinsir",
       "information": "Swings its long antlers wildly to Atk. During cold periods, it hides deep in forests",
-      "imageUrl": "/pokemons/Emerald/Pinsir.png",
+      "imageUrl": "pokemons/Emerald/Pinsir.png",
       "attributes": {
         "Health": 65,
         "Atk": 125,
