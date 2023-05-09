@@ -24,7 +24,7 @@ _`npm run start`_
 
 ### **Example of using the project:**
 
-![Example-GIF](./readme-resources/project-gif.gif)
+![Example](./readme-resources/pok.PNG)
 
 ---
 
