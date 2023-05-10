@@ -8,7 +8,6 @@ export const ToggleButtonGroup = styled(MuiToggleButtonGroup)`
   right: 30px;
   z-index: 1;
   margin-top: 100px;
-  gap: 5px;
 
   @media (min-width: 1280px) and (max-width: 1470px) {
     margin-top: 0;

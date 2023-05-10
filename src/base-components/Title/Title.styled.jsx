@@ -25,5 +25,6 @@ export const HeaderText = styledComponents.h1`
 
   @media (max-width: 480px) {
     font-size: 0.9em;
+    text-align:center;
   }
 `;

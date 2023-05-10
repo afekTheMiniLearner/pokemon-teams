@@ -1,14 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { Box, CircularProgress, Grow, Title } from "./LabeledLoader.styled";
+import { Box, Grow, Title } from "./LabeledLoader.styled";
 
 export default function LabeledLoader({ label, ...props }) {
   return (
     <Grow in>
-      <Box>
+      <Box {...props}>
         <Title>{label}</Title>
-        <CircularProgress color="warning" {...props} />
       </Box>
     </Grow>
   );
