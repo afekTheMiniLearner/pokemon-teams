@@ -94,7 +94,7 @@ export const ContentTypography = styled(MuiTypography)`
 export const Grow = styled(MuiGrow)``;
 
 export const Box = styled(MuiBox)`
-  display: flex;
-  align-items: center;
+  max-height: 63px;
   height: 63px;
+  overflow-y: auto;
 `;
