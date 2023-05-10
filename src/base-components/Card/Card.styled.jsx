@@ -97,4 +97,5 @@ export const Box = styled(MuiBox)`
   max-height: 63px;
   height: 63px;
   overflow-y: auto;
+  margin-top: 20px;
 `;
