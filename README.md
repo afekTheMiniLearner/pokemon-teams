@@ -30,7 +30,7 @@ _`npm run start`_
 
 ### **Technology**
 
-### This project has been developed using ReactJS, JavaScript, mui, styled-components, ESLINT.<br />It is also adapted to fit smaller screens using media queries.<br />
+### This project has been developed using ReactJS, JavaScript, Mui v5, styled-components, ESLINT.<br />It is also adapted to fit smaller screens using media queries.<br />
 
 ---
 
