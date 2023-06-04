@@ -9,8 +9,9 @@ export const Box = styled(MuiBox)`
 `;
 
 export const HeaderText = styledComponents.h1`
-  font-size:2em;
-
+  font-size: 2em;
+  user-select: none;
+  
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 1.7em;
   }
