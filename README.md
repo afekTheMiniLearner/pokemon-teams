@@ -33,6 +33,7 @@
 - [x] _**styled-components**_ : the project's styling is implemented using styled-components.
 - [x] _**Mui v5**_ : the project has been built using MUI v5 (Material-UI version 5).
 - [x] _**ESLINT**_ : the project adheres to the _ESLint_ guidelines and follows the best practices recommended by _airbnb_.
+- [x] _**Webpack**_ : the app is based on Webpack, providing extensive customization capabilities to tailor the application according to specific needs.
 
 ### Additional technologies used as development tools include:
 
