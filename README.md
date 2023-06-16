@@ -21,7 +21,7 @@
 
 ---
 
-### **Get a glimpse of the app.**
+### **Get a glimpse of the app:**
 
 ![Example](./readme-resources/pok.PNG)
 
