@@ -1,7 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function Table({ dataList }) {
+import "./ScoresTable.scss";
+
+function ScoresTable({ dataList }) {
   return (
     <div className="table-container">
       <table>
@@ -12,19 +14,21 @@ function Table({ dataList }) {
           <th>Total score:</th>
         </tr>
         {dataList?.map(({ name, algo, front }) => {
-          <tr>
-            <td>{name}</td>
-            <td>{algo}</td>
-            <td>{front}</td>
-            <td>{algo + front}</td>
-          </tr>;
+          return (
+            <tr key={name}>
+              <td>{name}</td>
+              <td>{algo}</td>
+              <td>{front}</td>
+              <td>{+algo + +front}</td>
+            </tr>
+          );
         })}
       </table>
     </div>
   );
 }
 
-Table.propTypes = {
+ScoresTable.propTypes = {
   dataList: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string,
@@ -34,8 +38,8 @@ Table.propTypes = {
   ),
 };
 
-Table.defaultProps = {
+ScoresTable.defaultProps = {
   dataList: undefined,
 };
 
-export default Table;
+export default ScoresTable;
