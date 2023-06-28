@@ -24,7 +24,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (sortType?.length) {
+    if (sortType?.param?.length) {
       setDataList((list) =>
         list?.sort((item1, item2) => {
           const { param, isLowerFirst } = sortType;
