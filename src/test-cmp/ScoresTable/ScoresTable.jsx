@@ -1,17 +1,79 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from "react";
 import PropTypes from "prop-types";
 
 import "./ScoresTable.scss";
 
-function ScoresTable({ dataList }) {
+function ScoresTable({ dataList, setSortType }) {
   return (
     <div className="table-container">
       <table>
         <tr>
           <th>Name:</th>
-          <th>Algo score:</th>
-          <th>Front score:</th>
-          <th>Total score:</th>
+          <th>
+            Algo score:
+            <div>
+              <p
+                className="arrow up"
+                onClick={() =>
+                  setSortType?.({ param: "algo", isLowerFirst: true })
+                }
+              >
+                &gt;
+              </p>
+              <p
+                className="arrow down"
+                onClick={() =>
+                  setSortType?.({ param: "algo", isLowerFirst: false })
+                }
+              >
+                &gt;
+              </p>
+            </div>
+          </th>
+          <th>
+            Front score:
+            <div>
+              <p
+                className="arrow up"
+                onClick={() =>
+                  setSortType?.({ param: "front", isLowerFirst: true })
+                }
+              >
+                &gt;
+              </p>
+              <p
+                className="arrow down"
+                onClick={() =>
+                  setSortType?.({ param: "front", isLowerFirst: false })
+                }
+              >
+                &gt;
+              </p>
+            </div>
+          </th>
+          <th>
+            Total score:
+            <div>
+              <p
+                className="arrow up"
+                onClick={() =>
+                  setSortType?.({ param: "total", isLowerFirst: true })
+                }
+              >
+                &gt;
+              </p>
+              <p
+                className="arrow down"
+                onClick={() =>
+                  setSortType?.({ param: "total", isLowerFirst: false })
+                }
+              >
+                &gt;
+              </p>
+            </div>
+          </th>
         </tr>
         {dataList?.map(({ name, algo, front }) => {
           return (
@@ -36,10 +98,12 @@ ScoresTable.propTypes = {
       front: PropTypes.number,
     })
   ),
+  setSortType: PropTypes.func,
 };
 
 ScoresTable.defaultProps = {
   dataList: undefined,
+  setSortType: undefined,
 };
 
 export default ScoresTable;

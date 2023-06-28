@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import ScoresTable from "./test-cmp/ScoresTable/ScoresTable";
 
 function App() {
   const [dataList, setDataList] = useState([]);
+  const [sortType, setSortType] = useState({ param: "", isLowerFirst: false });
 
   const [name, setName] = useState("");
   const [algo, setAlgo] = useState(0);
@@ -21,6 +22,20 @@ function App() {
   const clearButtonHandler = () => {
     setDataList([]);
   };
+
+  useEffect(() => {
+    if (sortType?.length) {
+      setDataList((list) =>
+        list?.sort((item1, item2) => {
+          const { param, isLowerFirst } = sortType;
+          return isLowerFirst
+            ? item1[param] - item2[param]
+            : item2[param] - item1[param];
+        })
+      );
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <div className="app-container">
@@ -71,7 +86,7 @@ function App() {
           </button>
         </div>
       </div>
-      <ScoresTable dataList={dataList} />
+      <ScoresTable dataList={dataList} setSortType={setSortType} />
     </div>
   );
 }
