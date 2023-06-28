@@ -12,7 +12,7 @@ function App() {
 
   const confirmButtonHandler = () => {
     if (name?.length && algo >= 0 && front >= 0) {
-      setDataList((d) => [...d, { name, algo, front }]);
+      setDataList((d) => [...d, { name, algo, front, total: +front + +algo }]);
       setName("");
       setAlgo(0);
       setFront(0);
@@ -25,8 +25,8 @@ function App() {
 
   useEffect(() => {
     if (sortType?.param?.length) {
-      setDataList((list) =>
-        list?.sort((item1, item2) => {
+      setDataList(
+        dataList?.sort((item1, item2) => {
           const { param, isLowerFirst } = sortType;
           return isLowerFirst
             ? item1[param] - item2[param]
@@ -35,7 +35,7 @@ function App() {
       );
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [sortType]);
 
   return (
     <div className="app-container">

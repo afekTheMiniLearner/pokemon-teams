@@ -75,13 +75,13 @@ function ScoresTable({ dataList, setSortType }) {
             </div>
           </th>
         </tr>
-        {dataList?.map(({ name, algo, front }) => {
+        {dataList?.map(({ name, algo, front, total }) => {
           return (
             <tr key={name}>
               <td>{name}</td>
               <td>{algo}</td>
               <td>{front}</td>
-              <td>{+algo + +front}</td>
+              <td>{total}</td>
             </tr>
           );
         })}
