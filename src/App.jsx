@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { PokemonCardsBox, ToggleDataButtons } from "@components";
 import { Title, LabeledLoader } from "@base-components";
 import { GAMES_BUTTONS } from "@utils";
+import { AppContainer } from "./App.styled";
 import pokemonTeams from "../pokemons.json";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
   }, [shouldLoad]);
 
   return (
-    <div className="app-container">
+    <AppContainer>
       <Title text="My favorite pokemon's team" />
       <ToggleDataButtons
         currentValue={team}
@@ -32,7 +33,7 @@ function App() {
           <PokemonCardsBox pokemonsTeam={pokemonTeams[team]} />
         </div>
       ) : null}
-    </div>
+    </AppContainer>
   );
 }
 
