@@ -1,5 +1,4 @@
 import { styled } from "@mui/material/styles";
-import styledComponents from "styled-components";
 import MuiBox from "@mui/material/Box";
 import MuiGrow from "@mui/material/Grow";
 
@@ -18,7 +17,7 @@ export const Grow = styled(MuiGrow)`
   transition-delay: 200ms;
 `;
 
-export const Title = styledComponents.h3`
+export const Title = styled("h3")`
   font-size: 1.3em;
 
   @media (min-width: 1025px) and (max-width: 1280px) {

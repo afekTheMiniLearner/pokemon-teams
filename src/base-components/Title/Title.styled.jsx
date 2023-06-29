@@ -1,5 +1,4 @@
 import { styled } from "@mui/material/styles";
-import styledComponents from "styled-components";
 import MuiBox from "@mui/material/Box";
 
 export const Box = styled(MuiBox)`
@@ -8,10 +7,10 @@ export const Box = styled(MuiBox)`
   top: 0;
 `;
 
-export const HeaderText = styledComponents.h1`
+export const HeaderText = styled("h1")`
   font-size: 2em;
   user-select: none;
-  
+
   @media (min-width: 1025px) and (max-width: 1280px) {
     font-size: 1.7em;
   }
@@ -26,6 +25,6 @@ export const HeaderText = styledComponents.h1`
 
   @media (max-width: 480px) {
     font-size: 0.9em;
-    text-align:center;
+    text-align: center;
   }
 `;
