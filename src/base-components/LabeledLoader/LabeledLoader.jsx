@@ -7,7 +7,7 @@ export default function LabeledLoader({ label, ...props }) {
   return (
     <Grow in>
       <Box {...props}>
-        <Avatar variant="square" src="/confused.png" />
+        <Avatar variant="square" src="confused.png" />
         <Title>{label}</Title>
       </Box>
     </Grow>
