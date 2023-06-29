@@ -17,22 +17,19 @@ export const Grow = styled(MuiGrow)`
   transition-delay: 200ms;
 `;
 
-export const Title = styled("h3")`
-  font-size: 1.3em;
+export const Title = styled("h3")(({ theme }) => ({
+  fontSize: "1.3em",
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    font-size: 1.1em;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 0.8em;
-  }
-
-  @media (min-width: 481px) and (max-width: 767px) {
-    font-size: 0.7em;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 0.5em;
-  }
-`;
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "1.1em",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "0.8em",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.7em",
+  },
+  [theme.breakpoints.down("xs")]: {
+    fontSize: "0.5em",
+  },
+}));
