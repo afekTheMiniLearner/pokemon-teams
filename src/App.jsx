@@ -25,9 +25,7 @@ function App() {
         }}
         buttonsProperties={GAMES_BUTTONS}
       />
-      {!team ? (
-        <LabeledLoader label="Waiting for you to pick a game . . ." />
-      ) : null}
+      {!team ? <LabeledLoader label="Awaiting your game choice . . ." /> : null}
       {shouldLoad ? (
         <div>
           <PokemonCardsBox pokemonsTeam={pokemonTeams[team]} />

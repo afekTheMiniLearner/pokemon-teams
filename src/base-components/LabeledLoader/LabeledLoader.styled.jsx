@@ -1,11 +1,11 @@
 import { styled } from "@mui/material/styles";
 import MuiBox from "@mui/material/Box";
 import MuiGrow from "@mui/material/Grow";
+import MuiAvatar from "@mui/material/Avatar";
 
 export const Box = styled(MuiBox)`
   display: flex;
   flex-direction: column;
-  gap: 60px;
 
   & > * {
     margin: 0 auto;
@@ -31,5 +31,19 @@ export const Title = styled("h3")(({ theme }) => ({
   },
   [theme.breakpoints.down("xs")]: {
     fontSize: "0.5em",
+  },
+}));
+
+export const Avatar = styled(MuiAvatar)(({ theme }) => ({
+  height: "140px",
+  width: "130px",
+
+  [theme.breakpoints.down("md")]: {
+    height: "130px",
+    width: "120px",
+  },
+  [theme.breakpoints.down("xs")]: {
+    height: "110px",
+    width: "100px",
   },
 }));
