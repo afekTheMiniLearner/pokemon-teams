@@ -37,7 +37,7 @@
 
 ### Additional technologies used as development tools include:
 
-- [x] _**Media-query**_ : _media queries_ have been employed to ensure compatibility with smaller screens.
+- [x] **Responsiveness** : the application is designed to be responsive and adapts to screens of all sizes. It achieves this by utilizing the responsive properties provided by MUI breakpoints for its components.
 
 ---
 
