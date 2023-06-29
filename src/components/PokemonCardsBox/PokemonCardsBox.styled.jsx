@@ -13,8 +13,8 @@ export const Box = styled(MuiBox)(({ theme }) => ({
 
   [theme.breakpoints.down("xs")]: {
     position: "absolute",
-    right: "10px",
     top: "110px",
+    right: "-5px",
   },
 }));
 

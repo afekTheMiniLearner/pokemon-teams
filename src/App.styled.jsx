@@ -20,7 +20,7 @@ export const AppContainer = styled("div")(({ theme }) => ({
     gap: "2px",
   },
   [theme.breakpoints.down("xs")]: {
-    height: "600px",
     maxWidth: "350px",
+    height: "600px",
   },
 }));

@@ -1,11 +1,14 @@
 import { styled } from "@mui/material/styles";
 import MuiBox from "@mui/material/Box";
 
-export const Box = styled(MuiBox)`
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-`;
+export const Box = styled(MuiBox)(({ theme }) => ({
+  maxWidth: "100%",
+  position: "absolute",
+  top: 0,
+  [theme.breakpoints.down("xs")]: {
+    maxWidth: "210px",
+  },
+}));
 
 export const HeaderText = styled("h1")(({ theme }) => ({
   textAlign: "center",

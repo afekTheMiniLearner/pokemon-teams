@@ -23,10 +23,9 @@ export const ToggleButtonGroup = styled(MuiToggleButtonGroup)(({ theme }) => ({
     right: "5px",
   },
   [theme.breakpoints.down("xs")]: {
-    position: "absolute",
     bottom: "unset",
     right: "unset",
-    top: "70px",
+    top: "80px",
   },
 }));
 
