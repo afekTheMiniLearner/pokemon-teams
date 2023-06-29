@@ -7,24 +7,20 @@ export const Box = styled(MuiBox)`
   top: 0;
 `;
 
-export const HeaderText = styled("h1")`
-  font-size: 2em;
-  user-select: none;
+export const HeaderText = styled("h1")(({ theme }) => ({
+  textAlign: "center",
+  fontSize: "1.85em",
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    font-size: 1.7em;
-  }
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    font-size: 1.25em;
-  }
-
-  @media (min-width: 481px) and (max-width: 767px) {
-    font-size: 1.1em;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 0.9em;
-    text-align: center;
-  }
-`;
+  [theme.breakpoints.down("lg")]: {
+    fontSize: "1.7em",
+  },
+  [theme.breakpoints.down("md")]: {
+    fontSize: "1.25em",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1.1em",
+  },
+  [theme.breakpoints.down("xs")]: {
+    fontSize: "0.9em",
+  },
+}));
