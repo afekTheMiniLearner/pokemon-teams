@@ -17,14 +17,16 @@ export const Zoom = styled(MuiZoom)`
   transition-delay: 200ms;
 `;
 
-export const Avatar = styled(MuiAvatar)`
-  @media (max-width: 1025px) {
-    height: 30px;
-    width: 30px;
-  }
+export const Avatar = styled(MuiAvatar)(({ theme }) => ({
+  height: "40px",
+  width: "40px",
 
-  @media (max-width: 480px) {
-    height: 25px;
-    width: 25px;
-  }
-`;
+  [theme.breakpoints.down("md")]: {
+    height: "30px",
+    width: "30px",
+  },
+  [theme.breakpoints.down("xs")]: {
+    height: "25px",
+    width: "25px",
+  },
+}));
