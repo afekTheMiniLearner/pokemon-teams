@@ -25,9 +25,15 @@ export const IconButton = styled(MuiIconButton)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
     height: "30px",
     width: "30px",
+    "& svg": {
+      fontSize: "18px",
+    },
   },
   [theme.breakpoints.down("xs")]: {
     height: "25px",
     width: "25px",
+    "& svg": {
+      fontSize: "15px",
+    },
   },
 }));
