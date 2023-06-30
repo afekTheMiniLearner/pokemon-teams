@@ -1,15 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { ToggleButton, ToggleButtonGroup } from "./ToggleDataButtons.styled";
+import { MuiSelect, MenuItem } from "./ToggleDataButtons.styled";
 
 export default function ToggleDataButtons({
   size,
-  color,
   currentValue,
   onChange,
   buttonsProperties,
-  orientation,
   ...props
 }) {
   const onChangeHandler = (_event, newDataType) => {
@@ -17,39 +15,27 @@ export default function ToggleDataButtons({
   };
 
   return (
-    <ToggleButtonGroup
+    <MuiSelect
       value={currentValue}
       size={size}
-      color={color}
-      orientation={orientation}
-      exclusive
       onChange={onChangeHandler}
       {...props}
     >
       {buttonsProperties?.map((value, i) => {
         const { label, style, icon } = value;
         return (
-          <ToggleButton key={i} value={label} sx={style}>
+          <MenuItem key={i} value={label} sx={style}>
             {label}
             {icon}
-          </ToggleButton>
+          </MenuItem>
         );
       })}
-    </ToggleButtonGroup>
+    </MuiSelect>
   );
 }
 
 ToggleDataButtons.propTypes = {
   size: PropTypes.string,
-  color: PropTypes.oneOf([
-    "primary",
-    "secondary",
-    "error",
-    "warning",
-    "info",
-    "success",
-    "text",
-  ]),
   currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
   buttonsProperties: PropTypes.arrayOf(
@@ -59,13 +45,10 @@ ToggleDataButtons.propTypes = {
       icon: PropTypes.node,
     })
   ),
-  orientation: PropTypes.string,
 };
 ToggleDataButtons.defaultProps = {
   size: "small",
-  color: undefined,
   currentValue: undefined,
   onChange: undefined,
   buttonsProperties: [],
-  orientation: "vertical",
 };
