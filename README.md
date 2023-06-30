@@ -1,4 +1,4 @@
-# Pokemon-Teams
+# Pokemon-Dream-Teams
 
 ## Overview
 
@@ -12,7 +12,7 @@
 
 ---
 
-**Live demo:**</br>[pokemon-teams](http://afektheminilearner.github.io/pokemon-teams)
+**Live demo:**</br>[pokemon-dream-teams](http://afektheminilearner.github.io/pokemon-dream-teams)
 
 **Command lines:**
 

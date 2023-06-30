@@ -51,7 +51,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "pokemon-teams",
+      title: "pokemon-dream-teams",
       filename: "index.html",
       template: "src/template.html",
       favicon: "public/favicon.ico",

@@ -1,8 +1,8 @@
 {
-  "name": "pokemon-teams",
+  "name": "pokemon-dream-teams",
   "description": "The app shows favorite pokemon teams and their data, each team relate to specific game",
   "author": "afek-sakaju",
-  "homepage": "https://github.com/afekTheMiniLearner/pokemon-teams",
+  "homepage": "https://github.com/afekTheMiniLearner/pokemon-dream-teams",
   "keywords": [
     "pokemon",
     "data",
@@ -13,11 +13,11 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/afekTheMiniLearner/pokemon-teams.git"
+    "url": "git+https://github.com/afekTheMiniLearner/pokemon-dream-teams.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/afekTheMiniLearner/pokemon-teams/issues"
+    "url": "https://github.com/afekTheMiniLearner/pokemon-dream-teams/issues"
   },
   "scripts": {
     "start": "webpack serve",
