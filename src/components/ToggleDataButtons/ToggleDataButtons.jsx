@@ -10,15 +10,11 @@ export default function ToggleDataButtons({
   buttonsProperties,
   ...props
 }) {
-  const onChangeHandler = (_event, newDataType) => {
-    onChange(newDataType);
-  };
-
   return (
     <MuiSelect
       value={currentValue}
       size={size}
-      onChange={onChangeHandler}
+      onChange={(e) => onChange(e.target.value)}
       {...props}
     >
       {buttonsProperties?.map((value, i) => {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { PokemonCardsBox, ToggleDataButtons } from "@components";
-import { Title, LabeledLoader } from "@base-components";
+import { Title } from "@base-components";
 import { GAMES_BUTTONS } from "@utils";
 import { AppContainer } from "./App.styled";
 import pokemonTeams from "../pokemons.json";
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <AppContainer>
-      <Title text="My favorite pokemon's team" />
+      <Title text="Supreme Pokemon teams" />
       <ToggleDataButtons
         currentValue={team}
         onChange={(t) => {
@@ -25,7 +25,6 @@ function App() {
         }}
         buttonsProperties={GAMES_BUTTONS}
       />
-      {!team ? <LabeledLoader label="Awaiting your game choice . . ." /> : null}
       {shouldLoad ? (
         <div>
           <PokemonCardsBox pokemonsTeam={pokemonTeams[team]} />
