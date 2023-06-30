@@ -88,7 +88,7 @@
     },
     {
       "pokemonName": "Slaking",
-      "information": "The world's laziest Pokémon. It moves to another spot when there's no food left within its reach.",
+      "information": "The world's laziest Pokemon. It moves to another spot when there's no food left within its reach.",
       "imageUrl": "pokemons/Emerald/Slaking.png",
       "attributes": {
         "Health": 70,
@@ -116,7 +116,7 @@
     },
     {
       "pokemonName": "Claydol",
-      "information": "An ancient clay figurine that came to life as a Pokémon from exposure to a mysterious ray of light.",
+      "information": "An ancient clay figurine that came to life as a Pokemon from exposure to a mysterious ray of light.",
       "imageUrl": "pokemons/Emerald/Claydol.png",
       "attributes": {
         "Health": 60,
@@ -146,7 +146,7 @@
   "GS Chronicles": [
     {
       "pokemonName": "Roserade",
-      "information": "Roserade is a graceful Pokémon known for its elegant appearance. It releases a sweet, pleasant aroma from its flowers to captivate its opponents.",
+      "information": "Roserade is a graceful Pokemon known for its elegant appearance. It releases a sweet, pleasant aroma from its flowers to captivate its opponents.",
       "imageUrl": "pokemons/GS Chronicles/Roserade.png",
       "attributes": {
         "Health": 60,
@@ -174,7 +174,7 @@
     },
     {
       "pokemonName": "Magmortar",
-      "information": "Magmortar is a Fire type Pokémon with a cannon-like arm that shoots fireballs. It is known for its explosive power and intense flames.",
+      "information": "Magmortar is a Fire type Pokemon with a cannon-like arm that shoots fireballs. It is known for its explosive power and intense flames.",
       "imageUrl": "pokemons/GS Chronicles/Magmortar.png",
       "attributes": {
         "Health": 75,
@@ -188,7 +188,7 @@
     },
     {
       "pokemonName": "Gengar",
-      "information": "Gengar is a Ghost and Poison type Pokémon that enjoys playing mischievous pranks. It can phase through walls and has a sinister presence.",
+      "information": "Gengar is a Ghost and Poison type Pokemon that enjoys playing mischievous pranks. It can phase through walls and has a sinister presence.",
       "imageUrl": "pokemons/GS Chronicles/Gengar.png",
       "attributes": {
         "Health": 60,
@@ -202,7 +202,7 @@
     },
     {
       "pokemonName": "Feraligatr",
-      "information": "Feraligatr is a powerful Water type Pokémon with strong jaws and a sturdy body. It is known for its aggressive nature and exceptional swimming skills.",
+      "information": "Feraligatr is a powerful Water type Pokemon with strong jaws and a sturdy body. It is known for its aggressive nature and exceptional swimming skills.",
       "imageUrl": "pokemons/GS Chronicles/Feraligatr.png",
       "attributes": {
         "Health": 85,
