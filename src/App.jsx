@@ -16,7 +16,7 @@ function App() {
 
   return (
     <AppContainer>
-      <Title text="Supreme Pokemon teams" />
+      <Title text="Pokemon dream teams" />
       <Select
         color="error"
         currentValue={team}
