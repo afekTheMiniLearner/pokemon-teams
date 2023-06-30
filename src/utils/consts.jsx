@@ -1,5 +1,6 @@
 import React from "react";
 import { GiMountainCave as GroundIcon } from "react-icons/gi";
+import { FaGhost as GhostIcon } from "react-icons/fa";
 import {
   Eject as SteelIcon,
   LocalFireDepartment as FireIcon,
@@ -19,6 +20,7 @@ export const TOGGLE_DATA_OPTIONS = ["Main", "Advanced"];
 export const GAMES_OPTIONS = {
   "Fire red": { style: { color: "red !important" } },
   Emerald: { style: { color: "rgb(38, 154, 25) !important" } },
+  "GS Chronicles": { style: { color: "grey !important" } },
 };
 
 export const ATTRIBUTES_LIST = ["Atk", "Def", "SpAtk", "SpDef", "Health"];
@@ -36,4 +38,5 @@ export const TYPES_ICONS = {
   electric: { icon: <ElectricIcon />, style: { backgroundColor: "yellow" } },
   steel: { icon: <SteelIcon />, style: { backgroundColor: "silver" } },
   ground: { icon: <GroundIcon />, style: { backgroundColor: "brown" } },
+  ghost: { icon: <GhostIcon />, style: { backgroundColor: "indigo" } },
 };

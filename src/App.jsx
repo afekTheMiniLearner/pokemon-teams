@@ -7,7 +7,7 @@ import { AppContainer } from "./App.styled";
 import pokemonTeams from "../pokemons.json";
 
 function App() {
-  const [team, setTeam] = useState(Object.keys(pokemonTeams)?.[0]);
+  const [team, setTeam] = useState(Object.keys(pokemonTeams)?.[2]);
   const [shouldLoad, setShouldLoad] = useState(true);
 
   useEffect(() => {

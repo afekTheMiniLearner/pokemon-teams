@@ -142,5 +142,77 @@
       },
       "types": ["bug"]
     }
+  ],
+  "GS Chronicles": [
+    {
+      "pokemonName": "Roserade",
+      "information": "Roserade is a graceful Pokémon known for its elegant appearance. It releases a sweet, pleasant aroma from its flowers to captivate its opponents.",
+      "imageUrl": "pokemons/GS Chronicles/Roserade.png",
+      "attributes": {
+        "Health": 60,
+        "Atk": 70,
+        "SpAtk": 125,
+        "Speed": 90,
+        "Def": 65,
+        "SpDef": 105
+      },
+      "types": ["grass", "poison"]
+    },
+    {
+      "pokemonName": "Ambipom",
+      "information": "Split into two, the tails are so adept at handling and doing things, Ambipom rarely uses its hands.",
+      "imageUrl": "pokemons/GS Chronicles/Ambipom.png",
+      "attributes": {
+        "Health": 75,
+        "Atk": 100,
+        "SpAtk": 60,
+        "Speed": 115,
+        "Def": 66,
+        "SpDef": 66
+      },
+      "types": ["normal"]
+    },
+    {
+      "pokemonName": "Magmortar",
+      "information": "Magmortar is a Fire type Pokémon with a cannon-like arm that shoots fireballs. It is known for its explosive power and intense flames.",
+      "imageUrl": "pokemons/GS Chronicles/Magmortar.png",
+      "attributes": {
+        "Health": 75,
+        "Atk": 95,
+        "SpAtk": 125,
+        "Speed": 83,
+        "Def": 67,
+        "SpDef": 95
+      },
+      "types": ["fire"]
+    },
+    {
+      "pokemonName": "Gengar",
+      "information": "Gengar is a Ghost and Poison type Pokémon that enjoys playing mischievous pranks. It can phase through walls and has a sinister presence.",
+      "imageUrl": "pokemons/GS Chronicles/Gengar.png",
+      "attributes": {
+        "Health": 60,
+        "Atk": 65,
+        "SpAtk": 130,
+        "Speed": 110,
+        "Def": 60,
+        "SpDef": 75
+      },
+      "types": ["ghost", "poison"]
+    },
+    {
+      "pokemonName": "Feraligatr",
+      "information": "Feraligatr is a powerful Water type Pokémon with strong jaws and a sturdy body. It is known for its aggressive nature and exceptional swimming skills.",
+      "imageUrl": "pokemons/GS Chronicles/Feraligatr.png",
+      "attributes": {
+        "Health": 85,
+        "Atk": 105,
+        "SpAtk": 79,
+        "Speed": 78,
+        "Def": 100,
+        "SpDef": 83
+      },
+      "types": ["water"]
+    }
   ]
 }
