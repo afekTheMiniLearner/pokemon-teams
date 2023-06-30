@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import { getTypesProperties } from "@utils";
-import { Box, Zoom, Avatar } from "./PokemonTypes.styled";
+import { Box, Zoom, IconButton } from "./PokemonTypes.styled";
 
 export default function PokemonTypes({ types, boxStyle }) {
   const typesProperties = getTypesProperties(types);
@@ -14,9 +14,9 @@ export default function PokemonTypes({ types, boxStyle }) {
 
         return (
           <Zoom key={i} in>
-            <Avatar alt={type} sx={style}>
+            <IconButton aria-label={type} sx={style} disableRipple>
               {icon}
-            </Avatar>
+            </IconButton>
           </Zoom>
         );
       })}

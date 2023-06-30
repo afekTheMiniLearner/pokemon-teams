@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import MuiZoom from "@mui/material/Zoom";
 import MuiBox from "@mui/material/Box";
-import MuiAvatar from "@mui/material/Avatar";
+import MuiIconButton from "@mui/material/IconButton";
 
 export const Box = styled(MuiBox)`
   display: flex;
@@ -17,7 +17,8 @@ export const Zoom = styled(MuiZoom)`
   transition-delay: 200ms;
 `;
 
-export const Avatar = styled(MuiAvatar)(({ theme }) => ({
+export const IconButton = styled(MuiIconButton)(({ theme }) => ({
+  color: "white",
   height: "40px",
   width: "40px",
 
