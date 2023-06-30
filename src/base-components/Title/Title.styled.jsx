@@ -13,6 +13,7 @@ export const Box = styled(MuiBox)(({ theme }) => ({
 export const HeaderText = styled("h1")(({ theme }) => ({
   textAlign: "center",
   fontSize: "1.85em",
+  color: "white",
 
   [theme.breakpoints.down("lg")]: {
     fontSize: "1.7em",
