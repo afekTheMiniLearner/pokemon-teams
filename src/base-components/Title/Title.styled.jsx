@@ -14,6 +14,7 @@ export const HeaderText = styled("h1")(({ theme }) => ({
   textAlign: "center",
   fontSize: "1.85em",
   color: "white",
+  userSelect: "none",
 
   [theme.breakpoints.down("lg")]: {
     fontSize: "1.7em",
