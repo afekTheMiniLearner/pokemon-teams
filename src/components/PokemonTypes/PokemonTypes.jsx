@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { getTypesProperties } from "@utils";
 import { Box, Zoom, IconButton } from "./PokemonTypes.styled";
 
-export default function PokemonTypes({ types, boxStyle }) {
+export default function PokemonTypes({ boxStyle, types, ...props }) {
   const typesProperties = getTypesProperties(types);
 
   return (
@@ -14,7 +14,7 @@ export default function PokemonTypes({ types, boxStyle }) {
 
         return (
           <Zoom key={i} in>
-            <IconButton aria-label={type} sx={style} disableRipple>
+            <IconButton aria-label={type} sx={style} disableRipple {...props}>
               {icon}
             </IconButton>
           </Zoom>
@@ -25,11 +25,11 @@ export default function PokemonTypes({ types, boxStyle }) {
 }
 
 PokemonTypes.propTypes = {
-  types: PropTypes.arrayOf(PropTypes.string),
   boxStyle: PropTypes.shape({}),
+  types: PropTypes.arrayOf(PropTypes.string),
 };
 
 PokemonTypes.defaultProps = {
-  types: [],
   boxStyle: {},
+  types: [],
 };

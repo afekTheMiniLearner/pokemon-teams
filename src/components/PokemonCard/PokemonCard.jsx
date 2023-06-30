@@ -7,26 +7,29 @@ import PokemonTypes from "@components/PokemonTypes/PokemonTypes";
 import { convertAttributesToLabels } from "@utils";
 
 export default function PokemonCard({
-  pokemonName,
-  information,
-  imageUrl,
   attributes,
+  imageUrl,
+  information,
+  pokemonName,
   types,
+  ...props
 }) {
   const [dataType, setDataType] = useState("Basic");
 
   return dataType === "Basic" ? (
     <Card
-      title={pokemonName}
-      information={information}
       imageUrl={imageUrl}
+      information={information}
       onClick={() => setDataType("Advanced")}
+      title={pokemonName}
+      {...props}
     />
   ) : (
     <Card
-      title={pokemonName}
       imageUrl={imageUrl}
       onClick={() => setDataType("Basic")}
+      title={pokemonName}
+      {...props}
     >
       <PokemonTypes types={types} />
       <PokemonChips chipsContent={convertAttributesToLabels(attributes)} />
@@ -35,9 +38,6 @@ export default function PokemonCard({
 }
 
 PokemonCard.propTypes = {
-  pokemonName: PropTypes.string,
-  information: PropTypes.string,
-  imageUrl: PropTypes.string,
   attributes: PropTypes.shape({
     Atk: PropTypes.number,
     Def: PropTypes.number,
@@ -45,13 +45,16 @@ PokemonCard.propTypes = {
     SpDef: PropTypes.number,
     Health: PropTypes.number,
   }),
+  imageUrl: PropTypes.string,
+  information: PropTypes.string,
+  pokemonName: PropTypes.string,
   types: PropTypes.arrayOf(PropTypes.string),
 };
 
 PokemonCard.defaultProps = {
-  pokemonName: "Pokemon",
-  information: undefined,
-  imageUrl: undefined,
   attributes: {},
+  imageUrl: undefined,
+  information: undefined,
+  pokemonName: "Pokemon",
   types: [],
 };

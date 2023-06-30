@@ -4,16 +4,16 @@ import PropTypes from "prop-types";
 import { ChipsBox } from "@base-components";
 
 export default function PokemonChips({
+  boxStyle,
   chipsContent,
   isClickAble,
-  boxStyle,
   ...props
 }) {
   return (
     <ChipsBox
+      boxStyle={boxStyle}
       chipsContent={chipsContent}
       isClickAble
-      boxStyle={boxStyle}
       size="small"
       {...props}
     />
@@ -21,15 +21,15 @@ export default function PokemonChips({
 }
 
 PokemonChips.propTypes = {
+  boxStyle: PropTypes.shape({}),
   chipsContent: PropTypes.arrayOf(
     PropTypes.shape({ label: PropTypes.string, icon: PropTypes.node })
   ),
   isClickAble: PropTypes.bool,
-  boxStyle: PropTypes.shape({}),
 };
 
 PokemonChips.defaultProps = {
+  boxStyle: {},
   chipsContent: [],
   isClickAble: false,
-  boxStyle: {},
 };

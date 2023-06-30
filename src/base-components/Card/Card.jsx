@@ -2,26 +2,27 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import {
-  MuiCard,
+  Box,
   CardActionArea,
   CardContent,
   CardMedia,
-  TitleTypography,
   ContentTypography,
   Grow,
-  Box,
+  MuiCard,
+  TitleTypography,
 } from "./Card.styled";
 
 export default function Card({
-  title,
-  information,
-  imageUrl,
-  onClick,
   children,
+  imageUrl,
+  information,
+  onClick,
+  title,
+  ...props
 }) {
   return (
     <Grow in>
-      <MuiCard onClick={onClick}>
+      <MuiCard onClick={onClick} {...props}>
         <CardActionArea>
           {imageUrl ? (
             <CardMedia component="img" image={imageUrl} alt={title} />
@@ -48,15 +49,15 @@ export default function Card({
 }
 
 Card.propTypes = {
-  title: PropTypes.string,
-  information: PropTypes.string,
   imageUrl: PropTypes.string,
+  information: PropTypes.string,
   onClick: PropTypes.func,
+  title: PropTypes.string,
 };
 
 Card.defaultProps = {
-  title: undefined,
-  information: undefined,
   imageUrl: undefined,
+  information: undefined,
   onClick: undefined,
+  title: undefined,
 };

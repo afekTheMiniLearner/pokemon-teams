@@ -4,18 +4,18 @@ import PropTypes from "prop-types";
 import { MuiSelect, MenuItem } from "./Select.styled";
 
 export default function Select({
-  size,
   currentValue,
   onChange,
   optionsProperties,
+  size,
   ...props
 }) {
   return (
     <MuiSelect
-      value={currentValue}
-      size={size}
       onChange={(e) => onChange(e.target.value)}
+      size={size}
       sx={optionsProperties?.[currentValue]?.style}
+      value={currentValue}
       {...props}
     >
       {Object.entries(optionsProperties)?.map(([label, properties], i) => {
@@ -31,7 +31,6 @@ export default function Select({
 }
 
 Select.propTypes = {
-  size: PropTypes.string,
   currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
   optionsProperties: PropTypes.objectOf(
@@ -41,10 +40,11 @@ Select.propTypes = {
       }),
     })
   ),
+  size: PropTypes.string,
 };
 Select.defaultProps = {
-  size: "small",
   currentValue: undefined,
   onChange: undefined,
   optionsProperties: [],
+  size: "small",
 };

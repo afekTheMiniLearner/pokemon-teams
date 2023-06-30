@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 
 import { Box, HeaderText } from "./Title.styled";
 
-export default function Title({ text }) {
+export default function Title({ text, ...props }) {
   return (
     <Box>
-      <HeaderText>{text}</HeaderText>
+      <HeaderText {...props}>{text}</HeaderText>
     </Box>
   );
 }

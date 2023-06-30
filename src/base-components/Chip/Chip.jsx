@@ -4,57 +4,57 @@ import PropTypes from "prop-types";
 import { MuiChip } from "./Chip.styled";
 
 export default function Chip({
-  label,
-  variant,
-  size,
+  avatar,
   color,
-  onClick,
-  onDelete,
+  deleteIcon,
   href,
   icon,
-  deleteIcon,
-  avatar,
+  label,
+  onClick,
+  onDelete,
+  size,
+  variant,
   ...props
 }) {
   return (
     <MuiChip
-      label={label}
-      variant={variant}
-      size={size}
+      avatar={avatar}
       color={color}
-      onClick={onClick}
-      onDelete={onDelete}
+      deleteIcon={deleteIcon}
       href={href}
       icon={icon}
-      deleteIcon={deleteIcon}
-      avatar={avatar}
+      label={label}
+      onClick={onClick}
+      onDelete={onDelete}
+      size={size}
+      variant={variant}
       {...props}
     />
   );
 }
 
 Chip.propTypes = {
-  label: PropTypes.string,
-  variant: PropTypes.string,
-  size: PropTypes.string,
+  avatar: PropTypes.node,
   color: PropTypes.string,
-  onClick: PropTypes.func,
-  onDelete: PropTypes.func,
+  deleteIcon: PropTypes.node,
   href: PropTypes.string,
   icon: PropTypes.node,
-  deleteIcon: PropTypes.node,
-  avatar: PropTypes.node,
+  label: PropTypes.string,
+  onClick: PropTypes.func,
+  onDelete: PropTypes.func,
+  size: PropTypes.string,
+  variant: PropTypes.string,
 };
 
 Chip.defaultProps = {
-  label: undefined,
-  variant: undefined,
-  size: undefined,
+  avatar: undefined,
   color: undefined,
-  onClick: undefined,
-  onDelete: undefined,
+  deleteIcon: undefined,
   href: undefined,
   icon: undefined,
-  deleteIcon: undefined,
-  avatar: undefined,
+  label: undefined,
+  onClick: undefined,
+  onDelete: undefined,
+  size: undefined,
+  variant: undefined,
 };

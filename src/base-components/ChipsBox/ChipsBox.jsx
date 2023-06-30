@@ -5,9 +5,9 @@ import Chip from "@base-components/Chip/Chip";
 import { Grid, Zoom } from "./ChipsBox.styled";
 
 export default function ChipsBox({
+  boxStyle,
   chipsContent,
   isClickAble,
-  boxStyle,
   ...props
 }) {
   return (
@@ -32,15 +32,15 @@ export default function ChipsBox({
 }
 
 ChipsBox.propTypes = {
+  boxStyle: PropTypes.shape({}),
   chipsContent: PropTypes.arrayOf(
     PropTypes.shape({ label: PropTypes.string, icon: PropTypes.node })
   ),
   isClickAble: PropTypes.bool,
-  boxStyle: PropTypes.shape({}),
 };
 
 ChipsBox.defaultProps = {
+  boxStyle: {},
   chipsContent: [],
   isClickAble: false,
-  boxStyle: {},
 };

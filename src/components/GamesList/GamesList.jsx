@@ -9,9 +9,9 @@ import {
   ListItemText,
 } from "./GamesList.styled";
 
-export default function GamesList({ items, children, onClick }) {
+export default function GamesList({ children, items, onClick, ...props }) {
   return (
-    <List>
+    <List {...props}>
       {items.map((item, i) => {
         const { name, icon, style } = item;
         return (
