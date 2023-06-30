@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-import { MuiSelect, MenuItem } from "./ToggleDataButtons.styled";
+import { MuiSelect, MenuItem } from "./Select.styled";
 
-export default function ToggleDataButtons({
+export default function Select({
   size,
   currentValue,
   onChange,
@@ -29,7 +29,7 @@ export default function ToggleDataButtons({
   );
 }
 
-ToggleDataButtons.propTypes = {
+Select.propTypes = {
   size: PropTypes.string,
   currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
@@ -40,7 +40,7 @@ ToggleDataButtons.propTypes = {
     })
   ),
 };
-ToggleDataButtons.defaultProps = {
+Select.defaultProps = {
   size: "small",
   currentValue: undefined,
   onChange: undefined,

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { PokemonCardsBox, ToggleDataButtons } from "@components";
-import { Title } from "@base-components";
+import { PokemonCardsBox } from "@components";
+import { Title, Select } from "@base-components";
 import { GAMES_BUTTONS } from "@utils";
 import { AppContainer } from "./App.styled";
 import pokemonTeams from "../pokemons.json";
@@ -17,7 +17,7 @@ function App() {
   return (
     <AppContainer>
       <Title text="Supreme Pokemon teams" />
-      <ToggleDataButtons
+      <Select
         currentValue={team}
         onChange={(t) => {
           setTeam(t);
