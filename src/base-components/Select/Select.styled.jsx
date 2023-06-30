@@ -18,6 +18,9 @@ export const MuiSelect = styled(Select)(({ theme }) => ({
   },
   [theme.breakpoints.down("md")]: {
     right: "20px",
+    height: "40px",
+    width: "120px",
+    fontSize: "0.65em",
   },
   [theme.breakpoints.down("sm")]: {
     bottom: "10px",
@@ -27,6 +30,9 @@ export const MuiSelect = styled(Select)(({ theme }) => ({
     bottom: "unset",
     right: "unset",
     top: "80px",
+    height: "40px",
+    width: "110px",
+    fontSize: "0.6em",
   },
 }));
 
