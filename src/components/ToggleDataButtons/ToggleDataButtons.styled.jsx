@@ -8,6 +8,7 @@ export const ToggleButtonGroup = styled(MuiToggleButtonGroup)(({ theme }) => ({
   right: "30px",
   zIndex: 1,
   marginTop: "100px",
+  backgroundColor: "white",
 
   [theme.breakpoints.down("lg")]: {
     top: "unset",
