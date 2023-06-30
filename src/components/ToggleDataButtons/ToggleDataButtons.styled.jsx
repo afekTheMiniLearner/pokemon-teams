@@ -48,6 +48,6 @@ import MuiMenuItem from "@mui/material/MenuItem";
 //  },
 // }));
 
-export const MuiSelect = styled(Select)(({ theme }) => ({}));
+export const MuiSelect = styled(Select)``;
 
 export const MenuItem = MuiMenuItem;

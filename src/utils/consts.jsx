@@ -7,7 +7,6 @@ import {
   Stars as StarIcon,
   FlashOn as ElectricIcon,
   SportsMma as FightIcon,
-  Diamond as DiamondIcon,
   Hub as PoisonIcon,
   Grass as GrassIcon,
   Visibility as PsychicIcon,
@@ -21,12 +20,10 @@ export const GAMES_BUTTONS = [
   {
     label: "Fire red",
     style: { color: "red !important" },
-    icon: <FireIcon />,
   },
   {
     label: "Emerald",
     style: { color: "rgb(38, 154, 25) !important" },
-    icon: <DiamondIcon />,
   },
 ];
 

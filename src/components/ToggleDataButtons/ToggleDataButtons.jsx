@@ -22,11 +22,10 @@ export default function ToggleDataButtons({
       {...props}
     >
       {buttonsProperties?.map((value, i) => {
-        const { label, style, icon } = value;
+        const { label, style } = value;
         return (
           <MenuItem key={i} value={label} sx={style}>
             {label}
-            {icon}
           </MenuItem>
         );
       })}
@@ -42,7 +41,6 @@ ToggleDataButtons.propTypes = {
     PropTypes.shape({
       label: PropTypes.string,
       style: PropTypes.shape({}),
-      icon: PropTypes.node,
     })
   ),
 };
