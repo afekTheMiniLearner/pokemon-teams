@@ -7,7 +7,7 @@ export default function Select({
   size,
   currentValue,
   onChange,
-  buttonsProperties,
+  optionProperties,
   ...props
 }) {
   return (
@@ -17,7 +17,7 @@ export default function Select({
       onChange={(e) => onChange(e.target.value)}
       {...props}
     >
-      {buttonsProperties?.map((value, i) => {
+      {optionProperties?.map((value, i) => {
         const { label, style } = value;
         return (
           <MenuItem key={i} value={label} sx={style}>
@@ -33,7 +33,7 @@ Select.propTypes = {
   size: PropTypes.string,
   currentValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   onChange: PropTypes.func,
-  buttonsProperties: PropTypes.arrayOf(
+  optionProperties: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string,
       style: PropTypes.shape({}),
@@ -44,5 +44,5 @@ Select.defaultProps = {
   size: "small",
   currentValue: undefined,
   onChange: undefined,
-  buttonsProperties: [],
+  optionProperties: [],
 };

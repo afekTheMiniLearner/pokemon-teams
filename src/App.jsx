@@ -23,7 +23,7 @@ function App() {
           setTeam(t);
           setShouldLoad(false);
         }}
-        buttonsProperties={GAMES_BUTTONS}
+        optionProperties={GAMES_BUTTONS}
       />
       {shouldLoad ? (
         <div>
