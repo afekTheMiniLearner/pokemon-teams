@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 
 import { PokemonCardsBox } from "@components";
 import { Title, Select } from "@base-components";
-import { GAMES_BUTTONS } from "@utils";
+import { GAMES_OPTIONS } from "@utils";
 import { AppContainer } from "./App.styled";
 import pokemonTeams from "../pokemons.json";
 
@@ -18,12 +18,13 @@ function App() {
     <AppContainer>
       <Title text="Supreme Pokemon teams" />
       <Select
+        color="error"
         currentValue={team}
         onChange={(t) => {
           setTeam(t);
           setShouldLoad(false);
         }}
-        optionProperties={GAMES_BUTTONS}
+        optionsProperties={GAMES_OPTIONS}
       />
       {shouldLoad ? (
         <div>

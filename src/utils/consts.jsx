@@ -16,16 +16,10 @@ import {
 
 export const TOGGLE_DATA_OPTIONS = ["Main", "Advanced"];
 
-export const GAMES_BUTTONS = [
-  {
-    label: "Fire red",
-    style: { color: "red !important" },
-  },
-  {
-    label: "Emerald",
-    style: { color: "rgb(38, 154, 25) !important" },
-  },
-];
+export const GAMES_OPTIONS = {
+  "Fire red": { style: { color: "red !important" } },
+  Emerald: { style: { color: "rgb(38, 154, 25) !important" } },
+};
 
 export const ATTRIBUTES_LIST = ["Atk", "Def", "SpAtk", "SpDef", "Health"];
 
