@@ -14,7 +14,13 @@ export default function PokemonTypes({ boxStyle, types, ...props }) {
 
         return (
           <Zoom key={i} in>
-            <IconButton aria-label={type} sx={style} disableRipple {...props}>
+            <IconButton
+              aria-label={type}
+              component="div"
+              disableRipple
+              sx={style}
+              {...props}
+            >
               {icon}
             </IconButton>
           </Zoom>
